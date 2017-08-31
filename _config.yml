@@ -1,0 +1,14 @@
+# Site  settings
+title: Portfolio
+email: canajfisnk@gmail.com
+description: Thinker // Problem solver // Positive person
+
+
+markdown: kramdown
+permalink: pretty
+
+port: 8000
+
+sass:
+  sass_dir: assets/css
+  style: :nested
