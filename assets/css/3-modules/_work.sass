@@ -1,0 +1,59 @@
+.alt-section
+  background: $grey-color
+  padding-bottom: 100px
+
+  h3
+    padding-bottom: 40px
+
+  .thumb-container
+    max-width: 990px
+    margin: 0px auto
+    padding: 0 20px 0px 20px
+    +clearfix
+    overflow: hidden
+
+    > .thumb-unit
+      display: block
+      width: 25%
+      padding-top: 15%
+      float: left
+      position: relative
+      background-position:  center center
+      background-repeat: no-repeat
+      background-size:  cover
+
+
+      @media screen and (max-width: 640px)
+        width: 50%
+        padding-top: 25%
+
+      .thumb-overlay
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        transform: translateY(101%)
+        background-color: $black-opacity
+        text-align: center
+        opacity: 0
+        +transform(rotateX(90deg))
+        +display(flex)
+        +align-items(center)
+        +justify-content(space-around)
+
+        strong
+          display: block
+          font-size: 20px
+          padding: 20px
+          color: white
+          margin: 0 auto
+          font-weight: 300
+          text-transform: uppercase
+          @media screen and (max-width: 640px)
+            font-size: 16px
+
+      &:hover .thumb-overlay
+        transform: translateY(0)
+        +transition(all 0.5s ease-in-out)
+        opacity: 1

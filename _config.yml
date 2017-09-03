@@ -1,9 +1,4 @@
-# Site  settings
-title: Portfolio
-email: canajfisnk@gmail.com
-description: Thinker // Problem solver // Positive person
-
-
+# Build
 markdown: kramdown
 permalink: pretty
 
