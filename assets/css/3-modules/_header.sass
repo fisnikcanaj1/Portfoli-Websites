@@ -4,11 +4,13 @@ header
   background: url(../img/#{$background-image}) center center
     size: cover
     attachment: fixed
+  background-blend-mode: overlay, normal
   &:hover
     transition: all 0.5s ease-in-out
     background: url(../img/#{$background-image}) center bottom
       size: cover
       attachment: fixed
+      blend-mode: overlay, normal
 
   .logo
     +size(50px)

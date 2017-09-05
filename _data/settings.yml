@@ -38,11 +38,11 @@ skills:
 
 # Project
 projects:
-- {name: Typo International, folder: proj-1}
-- {name: Typo International, folder: proj-2}
-- {name: Typo International, folder: proj-3}
-- {name: Typo International, folder: proj-4}
-- {name: Typo International, folder: proj-5}
-- {name: Typo International, folder: proj-6}
-- {name: Typo International, folder: proj-7}
-- {name: Typo International, folder: proj-8}
+- {name: Project 1, folder: proj-1}
+- {name: Project 2, folder: proj-2}
+- {name: Project 3, folder: proj-3}
+- {name: Project 4, folder: proj-4}
+- {name: Project 5, folder: proj-5}
+- {name: Project 6, folder: proj-6}
+- {name: Project 7, folder: proj-7}
+- {name: Project 8, folder: proj-8}
