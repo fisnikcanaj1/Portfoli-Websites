@@ -24,6 +24,7 @@ $(document).ready(function(){
 	function workBelt(){
 
 		$('.work-container').hide(0);
+
 		$('.thumb-unit').on('click', function(e){
 			$('.work-belt').css('left', '-100%');
 			$('.work-container').show(500);
