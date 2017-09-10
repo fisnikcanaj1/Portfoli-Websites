@@ -1,0 +1,15 @@
+<header>
+  <div class="logo">{% include icones/logo.html %}</div>
+
+  <nav>
+    {% for item in site.data.settings.menu %}
+      <a href="{{item.url}}">{{item.name}}</a>
+    {% endfor %}
+  </nav>
+
+  <div id="header" class="">
+    <h1><span>{{ site.data.settings.title }}</span></h1>
+    <p class="kicker">{{site.data.settings.description}}</p>
+  </div>
+
+</header>
