@@ -53,7 +53,8 @@ $(document).ready(function(){
 					newFolder = $this.data('folder');
 
 			var spinner = '<div class="loader">Loading...</div>',
-					newHTML = '/work/' + newFolder + '.html';
+					// newHTML = 'work/' + newFolder + '/index.html';
+					newHTML = '../work/'+ newFolder + '.html';
 			$('.project-title').text(newThis);
 			$('.project-load').html(spinner).load(newHTML);
 
@@ -65,17 +66,19 @@ $(document).ready(function(){
 
 		$('.client-unit').first().addClass('active-client');
 		$('.client-logo').first().addClass('active-logo')
+		$('.client-mobile-nav').first().addClass('active-logo')
 
 
 
 
-		$('.client-logo').on('click', function(){
+		$('.client-logo, .client-mobile-nav').on('click', function(){
 
 			var $this = $(this),
 			$siblings = $this.parent().children(),
 			position = $siblings.index($this);
 			$('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
 			$('.client-logo').removeClass('active-logo').eq(position).addClass('active-logo');
+			$('.client-mobile-nav').removeClass('active-logo').eq(position).addClass('active-logo');
 		});
 
 		$('.clients-controls-next, .clients-controls-prev').on('click', function(){

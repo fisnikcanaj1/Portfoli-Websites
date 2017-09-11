@@ -6,15 +6,18 @@
     <div class="clients-controls-next">{% include icones/icon-next.html %}</div>
     <div class="clients-controls-prev">{% include  icones/icon-prev.html %}</div>
   </div>
-
-
+  <div class="client-mobile-wrap">
+    {% for client in site.data.settings.testimonial %}
+      <span class="client-mobile-nav"></span>
+    {% endfor %}
+  </div>
 
   <div class="clients-belt">
   {% for client in site.data.settings.testimonial %}
     <div class="client-unit">
 
       <div class="client-face">
-        <img src="assets/img/clients/{{ client.img }}" alt="client-face" />
+        <img src="assets/img/clients/{{ client.img }}" alt="client-face" >
         <strong class="client-name">{{ client.name  }}</strong>
         <em class="client-title">{{ client.title }}</em>
       </div>
@@ -34,7 +37,7 @@
 
   <div class="clients-logos">
   {% for logo in site.data.settings.logos %}
-    <img src="/assets/img/clients/{{logo.logo}}" class="client-logo" alt="logo.logo">
+    <img src="assets/img/clients/{{logo.logo}}" class="client-logo" alt="logo.logo">
   {% endfor %}
   </div>
 

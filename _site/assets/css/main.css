@@ -723,7 +723,7 @@ h3 {
           opacity: 1; }
 
 .work-container {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   position: relative; }
   .work-container h4 {
@@ -758,9 +758,9 @@ h3 {
   position: relative;
   margin-top: 60px; }
   .clients-belt .client-unit {
-    padding: 0 50px;
+    padding: 0 0;
     max-width: 750px;
-    margin: 0 0 50px -405px;
+    margin: 0 0 50px -388px;
     position: absolute;
     top: 0px;
     left: 50%;
@@ -817,7 +817,7 @@ h3 {
 .clients-logos {
   width: 750px;
   position: relative;
-  margin: 300px auto 100px;
+  margin: 320px auto 100px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -828,11 +828,11 @@ h3 {
   -webkit-box-align: end;
   -moz-box-align: end;
   box-align: end;
-  -webkit-align-items: end;
-  -moz-align-items: end;
-  -ms-align-items: end;
-  -o-align-items: end;
-  align-items: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
   -ms-flex-align: end;
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -842,12 +842,16 @@ h3 {
   -ms-justify-content: space-around;
   -o-justify-content: space-around;
   justify-content: space-around;
-  -ms-flex-pack: center;
-  display: wrap; }
+  -ms-flex-pack: center; }
   .clients-logos .client-logo {
-    cursor: pointer; }
+    max-width: 100%;
+    cursor: pointer;
+    border-bottom: 3px solid #fff;
+    margin: 0 20px;
+    opacity: 0.6;
+    padding-bottom: 10px; }
     .clients-logos .client-logo.active-logo {
-      padding-bottom: 20px;
+      opacity: 1;
       border-bottom: 3px solid rgba(230, 126, 34, 0.7); }
 
 .clients-section {
@@ -870,3 +874,37 @@ h3 {
       position: absolute;
       top: 50%;
       left: 20px; }
+
+@media screen and (max-width: 860px) {
+  .clients-controls {
+    display: none; }
+
+  .clients-belt {
+    overflow: hidden;
+    margin-top: 20px; }
+    .clients-belt .client-unit.active-client {
+      display: block;
+      position: relative;
+      margin-left: 0px;
+      left: auto; }
+    .clients-belt .client-contetnt {
+      padding: 0 15px;
+      margin: 0 auto;
+      max-width: 600px; }
+
+  .clients-logos {
+    display: none; }
+
+  .client-mobile-wrap {
+    margin-top: 40px;
+    text-align: center; }
+    .client-mobile-wrap .client-mobile-nav {
+      cursor: pointer;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      border: 2px solid rgba(189, 195, 199, 0.3);
+      border-radius: 50%;
+      margin: 0 10px; }
+      .client-mobile-wrap .client-mobile-nav.active-logo {
+        border-color: rgba(230, 126, 34, 0.7); } }
