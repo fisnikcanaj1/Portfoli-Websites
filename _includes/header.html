@@ -2,15 +2,14 @@
   <div class="logo">{% include icones/logo.html %}</div>
 
   <nav>
-    <a href="">About Me</a>
-    <a href="">Work</a>
-    <a href="">Clients</a>
-    <a href="">Contact</a>
+    {% for item in site.data.settings.menu %}
+      <a href="{{item.url}}">{{item.name}}</a>
+    {% endfor %}
   </nav>
 
-  <div class="">
-    <h1><span>{{site.title}}</span></h1>
-    <p class="kicker">{{site.description}}</p>
+  <div id="header" class="">
+    <h1><span>{{ site.data.settings.title }}</span></h1>
+    <p class="kicker">{{site.data.settings.description}}</p>
   </div>
 
 </header>

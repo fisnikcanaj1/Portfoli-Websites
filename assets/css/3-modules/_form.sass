@@ -1,0 +1,62 @@
+.form-section
+
+  form
+    max-width: 700px
+    margin: 50px auto 100px auto
+    +clearfix
+
+    .name-input, .email-input
+      box-sizing: border-box
+      width: 50%
+      float: left
+      display: inline-block
+
+      @media screen and (max-width: 600px)
+        width: 100%
+        display: block
+        float: none
+
+        .name-item
+          margin-right: 0%
+
+        .email-item
+          margin-left: 0%
+
+      label
+        font-weight: 800
+
+    .name-item
+      margin-right: 5%
+
+    .email-item
+      margin-left: 5%
+
+    .submit-wrap
+      text-align: right
+      
+      [type='submit']
+        background-color: $accent-color
+        color: white
+        font-size: 18px
+        text-transform: uppercase
+        width: 33%
+
+    textarea, input, button
+      display: inline-block
+      width: 100%
+      outline: none
+      margin-bottom: 15px
+      padding: 10px
+      border: 2px solid $accent-color
+      +box-sizing(border-box)
+
+      &:focus
+        border-color: $selection-color
+
+    textarea
+      height: 200px
+    label
+      display: block
+      margin-bottom: 10px
+      font-weight: 800
+      color: rgba(0,0,0, 0.5)
