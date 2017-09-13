@@ -4,7 +4,6 @@ permalink: pretty
 
 port: 4000
 
-include: ['_includes/work']
 
 sass:
   sass_dir: assets/css

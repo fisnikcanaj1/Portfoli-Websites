@@ -57,7 +57,7 @@ function workLoad(){
 
 		var spinner = '<div class="loader">Loading...</div>',
 				// newHTML = 'work/' + newFolder + '/index.html';
-				newHTML = '../work/'+ newFolder + '.html';
+				newHTML = 'work/'+ newFolder + '/index.html';
 		$('.project-title').text(newThis);
 		$('.project-load').html(spinner).load(newHTML);
 
