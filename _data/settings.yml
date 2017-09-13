@@ -2,7 +2,7 @@
 #Header Section
 
 title: Portfolio
-email: canajfisnk@gmail.com
+email: canajfisnik@gmail.com
 description: Thinker // Problem solver // Positive person
 
 background-image: bg-image.jpg
@@ -71,3 +71,14 @@ logos:
 - {logo: logo2.png}
 - {logo: logo3.png}
 - {logo: logo4.png}
+
+
+# Contact section -----------
+
+
+
+social-links:
+- {name: 'github', link: 'https://github.com/fisnikcanaj1' }
+- {name: 'facebook', link: 'https://www.facebook.com/fcanaj2' }
+- {name: 'linkedin', link: 'https://www.linkedin.com/in/fisnik-canaj-687699b8' }
+- {name: 'instagram', link: 'https://www.instagram.com/fisnikcanaj' }

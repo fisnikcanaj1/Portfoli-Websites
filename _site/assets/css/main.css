@@ -1,4 +1,5 @@
 /* Header Path  Configurations */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -318,6 +319,46 @@ td, th {
   100% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+@font-face {
+  font-family: 'icomoon';
+  src: url("1-tools/fonts/icomoon.eot?ozk3y");
+  src: url("1-tools/fonts/icomoon.eot?ozk3y#iefix") format("embedded-opentype"), url("1-tools/fonts/icomoon.ttf?ozk3y") format("truetype"), url("1-tools/fonts/icomoon.woff?ozk3y") format("woff"), url("1-tools/fonts/icomoon.svg?ozk3y#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook:before {
+  content: "\f09a"; }
+
+.icon-facebook-f:before {
+  content: "\f09a"; }
+
+.icon-github:before {
+  content: "\f09b"; }
+
+.icon-envelope:before {
+  content: "\f0e0"; }
+
+.icon-linkedin:before {
+  content: "\f0e1"; }
+
+.icon-instagram:before {
+  content: "\f16d"; }
+
+.icon-git:before {
+  content: "\f1d3"; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: rgba(230, 126, 34, 0.7);
@@ -402,19 +443,20 @@ header nav a, header .kicker, footer .lockup .content-wrap a, h3 {
   font-size: 14px;
   text-transform: uppercase; }
 
+body {
+  font-family: "Open Sans", sans-serif; }
+
 header {
   transition: all 0.5s linear;
-  height: 450px;
   background: url(../img/bg-image.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
-  background-blend-mode: overlay, normal; }
+  padding-bottom: 70px; }
   header:hover {
     transition: all 0.5s ease-in-out;
     background: url(../img/bg-image.jpg) center bottom;
       background-size: cover;
-      background-attachment: fixed;
-      background-blend-mode: overlay, normal; }
+      background-attachment: fixed; }
   header .logo {
     height: 50px;
     width: 50px;
@@ -426,13 +468,13 @@ header {
     float: right;
     margin: 30px 30px 0 0; }
     header nav a {
+      font-size: 14px;
       display: inline-block;
       margin-left: 20px;
       color: rgba(0, 0, 0, 0.7); }
       header nav a:hover {
         color: black; }
   header h1 {
-    text-align: center;
     font-size: 72px;
     font-weight: 700;
     color: white;
@@ -440,7 +482,8 @@ header {
     letter-spacing: 0.05em;
     margin-bottom: 20px;
     padding-top: 105px;
-    clear: both; }
+    clear: both;
+    text-align: center; }
     header h1 span {
       display: inline-block;
       padding: 0.2em 0.5em;
@@ -449,6 +492,14 @@ header {
     text-align: center;
     color: white; }
 
+@media (max-width: 600px) {
+  header .logo, header nav {
+    float: none;
+    padding-top: 20px;
+    margin: 0px auto;
+    text-align: center; }
+  header h1 {
+    padding-top: 0px; } }
 footer {
   background: url(../img/bg-image.jpg);
     background-size: cover;
@@ -797,7 +848,7 @@ h3 {
       .clients-belt .client-unit .client-face .client-name, .clients-belt .client-unit .client-face .client-title {
         color: rgba(0, 0, 0, 0.5); }
     .clients-belt .client-unit .client-contetnt {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 24px;
       color: rgba(0, 0, 0, 0.5);
       font-size: 18px;
@@ -908,3 +959,129 @@ h3 {
       margin: 0 10px; }
       .client-mobile-wrap .client-mobile-nav.active-logo {
         border-color: rgba(230, 126, 34, 0.7); } }
+.contact-section {
+  background-color: rgba(189, 195, 199, 0.3);
+  text-align: center;
+  padding-bottom: 100px; }
+  .contact-section .social-links {
+    max-width: 700px;
+    margin: 100px auto 50px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .contact-section .social-links a {
+      display: block;
+      color: #fff;
+      background-color: rgba(230, 126, 34, 0.7);
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      line-height: 60px;
+      font-size: 28px;
+      border-radius: 50%;
+      cursor: pointer !important;
+      margin: 0px 20 0 10px;
+      opacity: 0.8;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .contact-section .social-links a:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
+  .contact-section .bar {
+    width: 250px;
+    height: 0px;
+    border-top: 4px solid rgba(230, 126, 34, 0.7);
+    margin: 0 auto; }
+  .contact-section .email-link {
+    display: inline-block;
+    margin: 100px 0 0 0;
+    line-height: 1px;
+    font-family: "Open Sans" sans-serif;
+    font-size: 82px;
+    font-weight: 300; }
+    @media (max-width: 850px) {
+      .contact-section .email-link {
+        font-size: 50px; } }
+    @media (max-width: 522px) {
+      .contact-section .email-link {
+        font-size: 28px; } }
+
+.form-section form {
+  max-width: 700px;
+  margin: 50px auto 100px auto; }
+  .form-section form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .form-section form .name-input, .form-section form .email-input {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    display: inline-block; }
+    @media screen and (max-width: 600px) {
+      .form-section form .name-input, .form-section form .email-input {
+        width: 100%;
+        display: block;
+        float: none; }
+        .form-section form .name-input .name-item, .form-section form .email-input .name-item {
+          margin-right: 0%; }
+        .form-section form .name-input .email-item, .form-section form .email-input .email-item {
+          margin-left: 0%; } }
+    .form-section form .name-input label, .form-section form .email-input label {
+      font-weight: 800; }
+  .form-section form .name-item {
+    margin-right: 5%; }
+  .form-section form .email-item {
+    margin-left: 5%; }
+  .form-section form .submit-wrap {
+    text-align: right; }
+    .form-section form .submit-wrap [type='submit'] {
+      background-color: rgba(230, 126, 34, 0.7);
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      width: 33%; }
+  .form-section form textarea, .form-section form input, .form-section form button {
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgba(230, 126, 34, 0.7);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .form-section form textarea:focus, .form-section form input:focus, .form-section form button:focus {
+      border-color: #FFF498; }
+  .form-section form textarea {
+    height: 200px; }
+  .form-section form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5); }
