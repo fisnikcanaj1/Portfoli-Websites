@@ -22,7 +22,7 @@ personal-description: <p><strong>Lorem ipsum dolor sit amet, consectetur adipisi
 menu:
 - {name: About Me, url: '#about'}
 - {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
+- {name: Testimonial, url: '#clients'}
 - {name: Contact, url: '#contact'}
 
 # About section -----------

@@ -432,7 +432,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Open Sans" sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -442,20 +442,12 @@ header nav a, header .kicker, footer .lockup .content-wrap a, h3 {
   font-size: 14px;
   text-transform: uppercase; }
 
-body {
-  font-family: "Open Sans", sans-serif; }
-
 header {
   transition: all 0.5s linear;
   background: url(../img/bg-image.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
   padding-bottom: 70px; }
-  header:hover {
-    transition: all 0.5s ease-in-out;
-    background: url(../img/bg-image.jpg) center bottom;
-      background-size: cover;
-      background-attachment: fixed; }
   header .logo {
     height: 50px;
     width: 50px;
@@ -654,7 +646,7 @@ h3 {
     display: table;
     clear: both; }
   .skill-lockup .skill-unit {
-    width: 300px;
+    width: 290px;
     float: left; }
     .skill-lockup .skill-unit .skill-label {
       font-size: 18px; }
@@ -1032,7 +1024,8 @@ h3 {
 
 .form-section form {
   max-width: 700px;
-  margin: 50px auto 100px auto; }
+  margin: 50px auto 100px auto;
+  padding: 0 15px; }
   .form-section form:after {
     content: "";
     display: table;
@@ -1064,7 +1057,13 @@ h3 {
       color: white;
       font-size: 18px;
       text-transform: uppercase;
-      width: 33%; }
+      max-width: 33%; }
+      .form-section form .submit-wrap [type='submit']:hover {
+        background-color: #FFF498;
+        color: rgba(230, 126, 34, 0.7); }
+      @media (max-width: 600px) {
+        .form-section form .submit-wrap [type='submit'] {
+          max-width: 100%; } }
   .form-section form textarea, .form-section form input, .form-section form button {
     display: inline-block;
     width: 100%;
