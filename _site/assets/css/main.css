@@ -561,7 +561,13 @@ h3 {
   .face-lockup .face-img {
     height: 230px;
     width: 230px;
-    order: 3; }
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+    -webkit-order: 3;
+    -moz-order: 3;
+    order: 3;
+    -ms-flex-order: 3; }
   .face-lockup [class^="icon-"] {
     height: 100px;
     width: 100px;
@@ -621,11 +627,7 @@ h3 {
       height: 230px;
       width: 230px;
       background-repeat: no-repeat;
-      margin: 30px auto;
-      border-radius: 50%; }
-      .face-lockup .face-img:hover {
-        height: 230px;
-        width: 230px; }
+      margin: 30px auto; }
     .face-lockup [class^="icon-"] {
       margin: 10px; } }
 .blurb {
@@ -648,6 +650,9 @@ h3 {
   .skill-lockup .skill-unit {
     width: 290px;
     float: left; }
+    @media (max-width: 300px) {
+      .skill-lockup .skill-unit {
+        width: 250px; } }
     .skill-lockup .skill-unit .skill-label {
       font-size: 18px; }
   .skill-lockup .skill-icons {
@@ -658,7 +663,7 @@ h3 {
       width: 8px;
       background: #fff;
       margin-top: 10px;
-      margin-right: 10px;
+      margin-right: 13px;
       border: 2px solid rgba(230, 126, 34, 0.7);
       border-radius: 50%; }
 
@@ -716,11 +721,6 @@ h3 {
           background-color: rgba(0, 0, 0, 0.7);
           text-align: center;
           opacity: 0;
-          -webkit-transform: rotateX(90deg);
-          -moz-transform: rotateX(90deg);
-          -ms-transform: rotateX(90deg);
-          -o-transform: rotateX(90deg);
-          transform: rotateX(90deg);
           display: -webkit-box;
           display: -moz-box;
           display: box;
@@ -736,16 +736,7 @@ h3 {
           -ms-align-items: center;
           -o-align-items: center;
           align-items: center;
-          -ms-flex-align: center;
-          -webkit-box-pack: center;
-          -moz-box-pack: center;
-          box-pack: center;
-          -webkit-justify-content: space-around;
-          -moz-justify-content: space-around;
-          -ms-justify-content: space-around;
-          -o-justify-content: space-around;
-          justify-content: space-around;
-          -ms-flex-pack: center; }
+          -ms-flex-align: center; }
           .alt-section .work-belt .thumb-container > .thumb-unit .thumb-overlay strong {
             display: block;
             font-size: 20px;
@@ -855,6 +846,11 @@ h3 {
         opacity: 0.3; }
         .clients-belt .client-unit .client-contetnt .icone-quotes-mark path {
           fill: rgba(230, 126, 34, 0.7); }
+        @media (max-width: 860px) {
+          .clients-belt .client-unit .client-contetnt .icone-quotes-mark {
+            position: absolute;
+            top: -16px;
+            left: 15px; } }
 
 .clients-logos {
   width: 750px;

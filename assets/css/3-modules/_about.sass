@@ -16,7 +16,7 @@ h3
     border-radius: 50%
   .face-img
     +size(230px)
-    order: 3
+    +order(3)
 
   [class^="icon-"]
     +size(100px)
@@ -52,14 +52,8 @@ h3
     .face-img
       display: block
       +size(230px)
-
-
       background-repeat: no-repeat
-
       margin: 30px auto
-      border-radius: 50%
-      &:hover
-        +size(230px)
 
     [class^="icon-"]
       margin: 10px
@@ -82,6 +76,10 @@ h3
   .skill-unit
     width: 290px
     float: left
+
+    @media (max-width: 300px)
+      width: 250px
+
     .skill-label
       font-size: 18px
 
@@ -92,7 +90,7 @@ h3
       +size(8px)
       background: $bg-color
       margin-top: 10px
-      margin-right: 10px
+      margin-right: 13px
       border: 2px solid $accent-color
       border-radius: 50%
 

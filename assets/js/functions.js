@@ -5,7 +5,7 @@ $(document).ready(function(){
 	workLoad();
 	clientStuff();
 
-	$("header h1").fitText(1.0, { minFontSize: '40px', maxFontSize: '72px' });
+	$("header h1").fitText(1.0, { minFontSize: '30px', maxFontSize: '72px' });
 
 });
 	// Smooth scroll function
