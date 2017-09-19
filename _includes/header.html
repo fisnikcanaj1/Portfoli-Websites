@@ -1,13 +1,13 @@
 <header>
-  <div class="logo">{% include icones/logo.html %}</div>
+  <div class="logo" data-aos="fade-in" data-aos-duration="3000">{% include icones/logo.html %}</div>
 
-  <nav>
+  <nav data-aos="fade-in" data-aos-duration="3000">
     {% for item in site.data.settings.menu %}
       <a href="{{item.url}}">{{item.name}}</a>
     {% endfor %}
   </nav>
 
-  <div id="header" class="">
+  <div id="header" class="" data-aos="fade-up" data-aos-duration="2500">
     <h1><span>{{ site.data.settings.title }}</span></h1>
     <p class="kicker">{{site.data.settings.description}}</p>
   </div>

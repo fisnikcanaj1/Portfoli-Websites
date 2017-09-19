@@ -43,14 +43,14 @@ skills:
 
 # Project
 projects:
-- {name: Project 1, folder: proj-1}
-- {name: Project 2, folder: proj-2}
-- {name: Project 3, folder: proj-3}
-- {name: Project 4, folder: proj-4}
-- {name: Project 5, folder: proj-5}
-- {name: Project 6, folder: proj-6}
-- {name: Project 7, folder: proj-7}
-- {name: Project 8, folder: proj-8}
+- {name: Project 1, folder: proj-1, delay: '2000'}
+- {name: Project 2, folder: proj-2, delay: '2400'}
+- {name: Project 3, folder: proj-3, delay: '2800'}
+- {name: Project 4, folder: proj-4, delay: '3000'}
+- {name: Project 5, folder: proj-5, delay: '2000'}
+- {name: Project 6, folder: proj-6, delay: '2400'}
+- {name: Project 7, folder: proj-7, delay: '2800'}
+- {name: Project 8, folder: proj-8, delay: '3000'}
 
 
 # Client section -----------

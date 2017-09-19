@@ -717,6 +717,10 @@ h3 {
           width: 100%;
           top: 0;
           left: 0;
+          -webkit-transform: translateY(101%);
+          -moz-transform: translateY(101%);
+          -ms-transform: translateY(101%);
+          -o-transform: translateY(101%);
           transform: translateY(101%);
           background-color: rgba(0, 0, 0, 0.7);
           text-align: center;
@@ -749,6 +753,10 @@ h3 {
               .alt-section .work-belt .thumb-container > .thumb-unit .thumb-overlay strong {
                 font-size: 16px; } }
         .alt-section .work-belt .thumb-container > .thumb-unit:hover .thumb-overlay {
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
           transform: translateY(0);
           -webkit-transition: all 0.5s ease-in-out;
           -moz-transition: all 0.5s ease-in-out;
@@ -886,10 +894,10 @@ h3 {
     cursor: pointer;
     border-bottom: 3px solid #fff;
     margin: 0 20px;
-    opacity: 0.6;
+    opacity: 0.5 !important;
     padding-bottom: 10px; }
     .clients-logos .client-logo.active-logo {
-      opacity: 1;
+      opacity: 1 !important;
       border-bottom: 3px solid rgba(230, 126, 34, 0.7); }
 
 .clients-section {
@@ -1040,7 +1048,9 @@ h3 {
           margin-right: 0%; }
         .form-section form .name-input .email-item, .form-section form .email-input .email-item {
           margin-left: 0%; } }
-    .form-section form .name-input label, .form-section form .email-input label {
+  .form-section form .message-input {
+    clear: both; }
+    .form-section form .message-input label {
       font-weight: 800; }
   .form-section form .name-item {
     margin-right: 5%; }

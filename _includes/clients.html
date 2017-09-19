@@ -1,18 +1,18 @@
 <section class="clients-section">
 
-    <h3 id="clients">Testimonial</h3>
+    <h3 id="clients" data-aos="fade-up" data-aos-duration="1000">Testimonial</h3>
 
   <div class="clients-controls">
     <div class="clients-controls-next">{% include icones/icon-next.html %}</div>
     <div class="clients-controls-prev">{% include  icones/icon-prev.html %}</div>
   </div>
-  <div class="client-mobile-wrap">
+  <div class="client-mobile-wrap" data-aos="fade-up" data-aos-duration="3000">
     {% for client in site.data.settings.testimonial %}
       <span class="client-mobile-nav"></span>
     {% endfor %}
   </div>
 
-  <div class="clients-belt">
+  <div class="clients-belt" data-aos="fade-up" data-aos-duration="3000">
   {% for client in site.data.settings.testimonial %}
     <div class="client-unit">
 
@@ -37,7 +37,7 @@
 
   <div class="clients-logos">
   {% for logo in site.data.settings.logos %}
-    <img src="assets/img/clients/{{logo.logo}}" class="client-logo" alt="logo.logo">
+    <img src="assets/img/clients/{{logo.logo}}" data-aos="fade-up" data-aos-duration="1000" class="client-logo" alt="logo.logo">
   {% endfor %}
   </div>
 
