@@ -1,7 +1,7 @@
 <header>
   <div class="logo" data-aos="fade-in" data-aos-duration="3000">{% include icones/logo.html %}</div>
 
-  <nav data-aos="fade-in" data-aos-duration="3000">
+  <nav>
     {% for item in site.data.settings.menu %}
       <a href="{{item.url}}">{{item.name}}</a>
     {% endfor %}
