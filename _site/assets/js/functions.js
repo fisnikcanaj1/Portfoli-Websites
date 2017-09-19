@@ -48,6 +48,7 @@ function workBelt(){
 
 function workLoad(){
 
+	$.ajaxSetup({ cache: false });
 
 	$('.thumb-unit').click(function(){
 
