@@ -1,5 +1,5 @@
 <header>
-  <div class="logo" data-aos="fade-in" data-aos-duration="3000">{% include icones/logo.html %}</div>
+  <div class="logo">{% include icones/logo.html %}</div>
 
   <nav>
     {% for item in site.data.settings.menu %}
@@ -7,9 +7,9 @@
     {% endfor %}
   </nav>
 
-  <div id="header" class="" data-aos="fade-up" data-aos-duration="2500">
-    <h1><span>{{ site.data.settings.title }}</span></h1>
-    <p class="kicker">{{site.data.settings.description}}</p>
+  <div id="header">
+    <h1 data-aos="fade-up" data-aos-duration="3000"><span>{{ site.data.settings.title }}</span></h1>
+    <p class="kicker" data-aos="fade-up" data-aos-duration="2500">{{site.data.settings.description}}</p>
   </div>
 
 </header>
