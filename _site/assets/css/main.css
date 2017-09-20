@@ -801,10 +801,10 @@ h3 {
   .clients-belt .client-unit {
     padding: 0 0;
     max-width: 750px;
-    margin: 0 0 50px -388px;
-    position: absolute;
+    margin: 0 auto 20px;
+    position: relative;
     top: 0px;
-    left: 50%;
+    left: 0;
     display: none; }
     .clients-belt .client-unit.active-client {
       display: -webkit-box;
@@ -863,7 +863,7 @@ h3 {
 .clients-logos {
   width: 750px;
   position: relative;
-  margin: 320px auto 100px;
+  margin: 0px auto 100px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -913,13 +913,15 @@ h3 {
       width: 50px;
       position: absolute;
       top: 50%;
-      right: 20px; }
+      right: 20px;
+      z-index: 999; }
     .clients-section .clients-controls .clients-controls-prev {
       height: 50px;
       width: 50px;
       position: absolute;
       top: 50%;
-      left: 20px; }
+      left: 20px;
+      z-index: 999; }
 
 @media screen and (max-width: 860px) {
   .clients-controls {
