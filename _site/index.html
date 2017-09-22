@@ -21,21 +21,31 @@
 </head>
 <body>
 
-<header>
-  <div class="logo" data-aos="fade-in" data-aos-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50" style="width: 50px; height: 50px;" ><path fill="rgba(0, 0, 0, 0.7)" d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z"/></svg>
-</div>
+<header id="header">
+  <div class="nav-logo">
 
-  <nav>
-    
+    <div class="logo" data-aos="fade-in" data-aos-duration="3000"><a href=""><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50" style="width: 50px; height: 50px;" ><path fill="rgba(0, 0, 0, 0.7)" d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z"/></svg>
+</a></div>
+
+    <div class="toggle-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-bar">
+      
       <a href="#about" data-aos="fade-in" data-aos-duration="3000">About Me</a>
-    
+      
       <a href="#work" data-aos="fade-in" data-aos-duration="3000">Work</a>
-    
+      
       <a href="#clients" data-aos="fade-in" data-aos-duration="3000">Testimonial</a>
-    
+      
       <a href="#contact" data-aos="fade-in" data-aos-duration="3000">Contact</a>
-    
-  </nav>
+      
+    </nav>
+
+  </div>
 
   <div id="header">
     <h1 data-aos="fade-up" data-aos-duration="3000"><span>Portfolio</span></h1>
@@ -47,9 +57,9 @@
 
 
 
-<section>
+<section id="about">
 
-  <h3 id="about" data-aos="fade-up" data-aos-duration="1000">About Myself</h3>
+  <h3  data-aos="fade-up" data-aos-duration="1000">About Myself</h3>
 
   <div class="face-lockup">
 
@@ -159,9 +169,9 @@
 </section>
 
 
-<section class="alt-section work-section">
+<section class="alt-section work-section" id="work">
 
-  <h3 id="work" data-aos="fade-up" data-aos-duration="3000">Works</h3>
+  <h3 data-aos="fade-up" data-aos-duration="3000">Works</h3>
 
   <div class="work-belt">
 
@@ -306,9 +316,9 @@
 </section>
 
 
-<section class="clients-section">
+<section class="clients-section" id="clients">
 
-    <h3 id="clients" data-aos="fade-up" data-aos-duration="3000">Testimonial</h3>
+    <h3 data-aos="fade-up" data-aos-duration="3000">Testimonial</h3>
 
   <div class="clients-controls">
     <div class="clients-controls-next" data-aos="fade-in" data-aos-duration="3000"><?xml version="1.0" encoding="utf-8"?>
@@ -348,11 +358,14 @@
   
     <div class="client-unit">
 
-      <div class="client-face">
+      <figure class="client-face">
         <img src="assets/img/clients/face-albert.jpg" alt="client-face" >
-        <strong class="client-name">Albert Lekal</strong>
-        <em class="client-title">Graphic designer</em>
-      </div>
+
+        <figcaption>
+          <strong class="client-name">Albert Lekal</strong>
+          <em class="client-title">Graphic designer</em>
+        </figcaption>
+      </figure>
 
       <div class="client-contetnt">
         <div class="icone-quotes-mark">
@@ -379,11 +392,14 @@
   
     <div class="client-unit">
 
-      <div class="client-face">
+      <figure class="client-face">
         <img src="assets/img/clients/face-aaroni2.jpg" alt="client-face" >
-        <strong class="client-name">Granit Gashi</strong>
-        <em class="client-title">Doctor</em>
-      </div>
+
+        <figcaption>
+          <strong class="client-name">Granit Gashi</strong>
+          <em class="client-title">Doctor</em>
+        </figcaption>
+      </figure>
 
       <div class="client-contetnt">
         <div class="icone-quotes-mark">
@@ -410,11 +426,14 @@
   
     <div class="client-unit">
 
-      <div class="client-face">
+      <figure class="client-face">
         <img src="assets/img/clients/face-atariboy.jpg" alt="client-face" >
-        <strong class="client-name">Atary Lekal</strong>
-        <em class="client-title">Manager</em>
-      </div>
+
+        <figcaption>
+          <strong class="client-name">Atary Lekal</strong>
+          <em class="client-title">Manager</em>
+        </figcaption>
+      </figure>
 
       <div class="client-contetnt">
         <div class="icone-quotes-mark">
@@ -441,11 +460,14 @@
   
     <div class="client-unit">
 
-      <div class="client-face">
+      <figure class="client-face">
         <img src="assets/img/clients/face-teleject.jpg" alt="client-face" >
-        <strong class="client-name">Albert Lekal</strong>
-        <em class="client-title">Graphic designer</em>
-      </div>
+
+        <figcaption>
+          <strong class="client-name">Albert Lekal</strong>
+          <em class="client-title">Graphic designer</em>
+        </figcaption>
+      </figure>
 
       <div class="client-contetnt">
         <div class="icone-quotes-mark">
@@ -487,9 +509,9 @@
 </section>
 
 
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
-  <h3 id="contact" data-aos="fade-up" data-aos-duration="3000">Contact</h3>
+  <h3  data-aos="fade-up" data-aos-duration="3000">Contact</h3>
   <div class="social-links" data-aos="fade-up" data-aos-duration="3000">
     
       <a href="https://github.com/fisnikcanaj1" class="icon-github"></a>

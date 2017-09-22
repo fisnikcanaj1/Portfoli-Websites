@@ -12,26 +12,41 @@ header
   //     size: cover
   //     attachment: fixed
 
-  .logo
-    +size(50px)
-    float: left
-    margin: 20px 0 0 30px
-    path
-      fill: rgba(0,0,0, 0.2)
+  .nav-logo
+    +transition(all 0.5s ease-in-out)
 
-  nav
-    float: right
-    margin: 30px 30px 0 0
-    a
-      font-size: 14px
-      display: inline-block
-      margin-left: 20px
-      color: rgba(0, 0, 0, 0.7)
+    &.scrolled-header
+      position: fixed!important
+      top: 0
+      width: 100%
+      padding: 7px 0px
+      z-index: 9999
+      background-color: rgba(0,0,0, 0.6)
 
-      @extend %small-bold
+    .logo
+      +size(50px)
+      float: left
+      margin: 20px 0 0 30px
+      path
+        fill: rgba(0,0,0, 0.2)
 
-      &:hover
-        color: rgba(0, 0, 0, 1)
+      &.scrolled
+        margin: 0px 30px
+
+
+    nav
+      float: right
+      margin: 30px 30px 0 0
+      a
+        font-size: 14px
+        display: inline-block
+        margin-left: 20px
+        color: rgba(0, 0, 0, 0.7)
+
+        @extend %small-bold
+
+        &:hover
+          color: rgba(0, 0, 0, 1)
 
   h1
 
@@ -53,17 +68,52 @@ header
   .kicker
     text-align: center
     @extend %small-bold
-    color: white
+    color: $bg-color
 
 
 @media (max-width: 600px)
   header
+    .nav-logo
 
-    .logo, nav
-      float: none
-      padding-top: 20px
-      margin: 0px auto
-      text-align: center
+      &.scrolled-header
+
+        nav
+          display: none
+
+          &.show-nav
+            display: block
+
+
+        .toggle-button
+          cursor: pointer
+          position: absolute
+          top: 14px
+          right: 30px
+          +size(50px)
+
+          span
+            z-index: 999
+            display: block
+            margin: 9px 0
+            height: 4px
+            background-color: $bg-color
+            width: 100%
+
+        a
+          color: white
+          display: block
+
+      .logo, nav
+        float: none
+        padding: 5px 0
+        margin: 0px auto
+        text-align: center
+
+        &.scrolled
+
+
+        a
+          text-align: center
 
     h1
       padding-top: 0px

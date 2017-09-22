@@ -4,8 +4,9 @@ $(document).ready(function(){
 	workBelt();
 	workLoad();
 	clientStuff();
-
+	fixNav();
 	$("header h1").fitText(1.0, { minFontSize: '30px', maxFontSize: '72px' });
+	navToggle();
 
 });
 	// Smooth scroll function
@@ -115,6 +116,44 @@ function clientStuff(){
 				$('.active-logo').removeClass('active-logo').prev().addClass('active-logo');
 			}
 		}
+	});
+
+}
+
+function fixNav(){
+
+	$(window).scroll(function(e) {
+
+		var scrollTop = $(window).scrollTop();
+		const SCROLLLIMIT = 50;
+
+		if (scrollTop > SCROLLLIMIT) {
+
+			$("nav").css("margin-top", "0px");
+			$("nav a").css("padding", "15px 0px");
+			$(".logo").addClass('scrolled');
+			$(".nav-logo").addClass("scrolled-header");
+
+		}
+		else {
+
+			$("nav").css("margin-top", "30px");
+			$("nav a").css("padding", "0px");
+			$(".logo").removeClass('scrolled');
+			$(".nav-logo").removeClass("scrolled-header");
+
+		}
+	});
+
+}
+
+function navToggle (){
+
+	$(".toggle-button").on('click', function(){
+
+
+		$(".nav-bar").toggleClass('show-nav');
+
 	});
 
 }

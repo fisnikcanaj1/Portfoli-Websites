@@ -437,7 +437,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-header nav a, header .kicker, footer .lockup .content-wrap a, h3 {
+header .nav-logo nav a, header .kicker, footer .lockup .content-wrap a, h3 {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase; }
@@ -448,23 +448,36 @@ header {
     background-size: cover;
     background-attachment: fixed;
   padding-bottom: 70px; }
-  header .logo {
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin: 20px 0 0 30px; }
-    header .logo path {
-      fill: rgba(0, 0, 0, 0.2); }
-  header nav {
-    float: right;
-    margin: 30px 30px 0 0; }
-    header nav a {
-      font-size: 14px;
-      display: inline-block;
-      margin-left: 20px;
-      color: rgba(0, 0, 0, 0.7); }
-      header nav a:hover {
-        color: black; }
+  header .nav-logo {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    header .nav-logo.scrolled-header {
+      position: fixed !important;
+      top: 0;
+      width: 100%;
+      padding: 7px 0px;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.6); }
+    header .nav-logo .logo {
+      height: 50px;
+      width: 50px;
+      float: left;
+      margin: 20px 0 0 30px; }
+      header .nav-logo .logo path {
+        fill: rgba(0, 0, 0, 0.2); }
+      header .nav-logo .logo.scrolled {
+        margin: 0px 30px; }
+    header .nav-logo nav {
+      float: right;
+      margin: 30px 30px 0 0; }
+      header .nav-logo nav a {
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 20px;
+        color: rgba(0, 0, 0, 0.7); }
+        header .nav-logo nav a:hover {
+          color: black; }
   header h1 {
     font-size: 72px;
     font-weight: 700;
@@ -481,14 +494,37 @@ header {
       border: 10px solid white; }
   header .kicker {
     text-align: center;
-    color: white; }
+    color: #fff; }
 
 @media (max-width: 600px) {
-  header .logo, header nav {
+  header .nav-logo.scrolled-header nav {
+    display: none; }
+    header .nav-logo.scrolled-header nav.show-nav {
+      display: block; }
+  header .nav-logo.scrolled-header .toggle-button {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 30px;
+    height: 50px;
+    width: 50px; }
+    header .nav-logo.scrolled-header .toggle-button span {
+      z-index: 999;
+      display: block;
+      margin: 9px 0;
+      height: 4px;
+      background-color: #fff;
+      width: 100%; }
+  header .nav-logo.scrolled-header a {
+    color: white;
+    display: block; }
+  header .nav-logo .logo, header .nav-logo nav {
     float: none;
-    padding-top: 20px;
+    padding: 5px 0;
     margin: 0px auto;
     text-align: center; }
+    header .nav-logo .logo a, header .nav-logo nav a {
+      text-align: center; }
   header h1 {
     padding-top: 0px; } }
 footer {
@@ -822,7 +858,7 @@ h3 {
     .clients-belt .client-unit .client-face {
       min-width: 200px;
       text-align: center;
-      margin-top: 15px; }
+      margin: 15px 0 0 0; }
       .clients-belt .client-unit .client-face img {
         max-width: 100px;
         border-radius: 50%; }

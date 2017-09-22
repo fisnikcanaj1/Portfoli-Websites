@@ -1,6 +1,6 @@
-<section class="clients-section">
+<section class="clients-section" id="clients">
 
-    <h3 id="clients" data-aos="fade-up" data-aos-duration="3000">Testimonial</h3>
+    <h3 data-aos="fade-up" data-aos-duration="3000">Testimonial</h3>
 
   <div class="clients-controls">
     <div class="clients-controls-next" data-aos="fade-in" data-aos-duration="3000">{% include icones/icon-next.html %}</div>
@@ -16,11 +16,14 @@
   {% for client in site.data.settings.testimonial %}
     <div class="client-unit">
 
-      <div class="client-face">
+      <figure class="client-face">
         <img src="assets/img/clients/{{ client.img }}" alt="client-face" >
-        <strong class="client-name">{{ client.name  }}</strong>
-        <em class="client-title">{{ client.title }}</em>
-      </div>
+
+        <figcaption>
+          <strong class="client-name">{{ client.name  }}</strong>
+          <em class="client-title">{{ client.title }}</em>
+        </figcaption>
+      </figure>
 
       <div class="client-contetnt">
         <div class="icone-quotes-mark">
