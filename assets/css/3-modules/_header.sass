@@ -89,13 +89,31 @@ header
           position: absolute
           top: 14px
           right: 30px
-          +size(50px)
+          +size(38px)
+
+          &.clicked
+            padding-top: 20px
+
+            span
+              margin: 0
+
+            span:nth-child(1)
+              // +transform(translateY(12px))
+              +transform(rotate(-45deg))
+
+            span:nth-child(2)
+              display: none
+
+            span:nth-child(3)
+              // +transform(translateY(-12px))
+              +transform(rotate(-135deg))
+              margin-top: -3px!important
 
           span
             z-index: 999
             display: block
             margin: 9px 0
-            height: 4px
+            height: 3px
             background-color: $bg-color
             width: 100%
 

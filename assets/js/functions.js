@@ -153,7 +153,7 @@ function navToggle (){
 
 
 		$(".nav-bar").toggleClass('show-nav');
-
+		$('.toggle-button').toggleClass('clicked');
 	});
 
 }
