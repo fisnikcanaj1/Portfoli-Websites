@@ -59,7 +59,7 @@ function workLoad(){
 
 		var spinner = '<div class="loader">Loading...</div>',
 				// newHTML = 'work/' + newFolder + '/index.html';
-				newHTML = 'work/'+ newFolder + '.html';
+				newHTML = 'work/'+ newFolder ;
 		$('.project-title').text(newThis);
 		$('.project-load').html(spinner).load(newHTML);
 
@@ -107,6 +107,7 @@ function clientStuff(){
 
 		}
 		else {
+
 			if (position === 0) {
 				$('.client-unit').removeClass('active-client').last().addClass('active-client');
 				$('.client-logo').removeClass('active-logo').last().addClass('active-logo');
@@ -115,6 +116,7 @@ function clientStuff(){
 				$('.active-client').removeClass('active-client').prev().addClass('active-client');
 				$('.active-logo').removeClass('active-logo').prev().addClass('active-logo');
 			}
+
 		}
 	});
 
@@ -131,15 +133,16 @@ function fixNav(){
 
 			$("nav").css("margin-top", "0px");
 			$("nav a").css("padding", "15px 0px");
-			$(".logo").addClass('scrolled');
+			$("header").addClass("header-top");
+			$(".logo").addClass("scrolled");
 			$(".nav-logo").addClass("scrolled-header");
 
 		}
 		else {
-
 			$("nav").css("margin-top", "30px");
 			$("nav a").css("padding", "0px");
-			$(".logo").removeClass('scrolled');
+			$("header").removeClass("header-top");
+			$(".logo").removeClass("scrolled");
 			$(".nav-logo").removeClass("scrolled-header");
 
 		}
@@ -151,9 +154,9 @@ function navToggle (){
 
 	$(".toggle-button").on('click', function(){
 
-
 		$(".nav-bar").toggleClass('show-nav');
 		$('.toggle-button').toggleClass('clicked');
+
 	});
 
 }

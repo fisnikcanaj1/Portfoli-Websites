@@ -443,11 +443,15 @@ header .nav-logo nav a, header .kicker, footer .lockup .content-wrap a, h3 {
   text-transform: uppercase; }
 
 header {
-  transition: all 0.5s linear;
   background: url(../img/bg-image.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
   padding-bottom: 70px; }
+  header.header-top {
+    padding-top: 39px; }
+  @media (max-width: 600px) {
+    header.header-top {
+      padding-top: 144px; } }
   header .nav-logo {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -1074,11 +1078,8 @@ h3 {
     margin: 100px 0 0 0;
     line-height: 1px;
     font-family: "Open Sans" sans-serif;
-    font-size: 82px;
+    font-size: 42px;
     font-weight: 300; }
-    @media (max-width: 850px) {
-      .contact-section .email-link {
-        font-size: 50px; } }
     @media (max-width: 522px) {
       .contact-section .email-link {
         font-size: 28px; } }
