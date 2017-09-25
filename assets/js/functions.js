@@ -30,7 +30,7 @@ function smoothScroll(duration) {
 
 function workBelt(){
 
-	$('.work-container').hide(0);
+	$('.work-container').hide();
 
 	$('.thumb-unit').on('click', function(e){
 		$('.work-belt').css('left', '-100%');
@@ -40,7 +40,6 @@ function workBelt(){
 
 	$('.work-return').on('click', function(e){
 		$('.work-belt').css('left', '0%');
-
 		$('.work-container').hide(500);
 	});
 

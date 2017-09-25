@@ -451,7 +451,10 @@ header {
     padding-top: 39px; }
   @media (max-width: 600px) {
     header.header-top {
-      padding-top: 144px; } }
+      padding-top: 112px; } }
+  @media (max-width: 385px) {
+    header.header-top {
+      padding-top: 134px; } }
   header .nav-logo {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -462,7 +465,10 @@ header {
       width: 100%;
       padding: 7px 0px;
       z-index: 9999;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1px 4px black;
+      -moz-box-shadow: 0 1px 4px black;
+      -webkit-box-shadow: 0 1px 4px black; }
     header .nav-logo .logo {
       height: 50px;
       width: 50px;
@@ -501,8 +507,11 @@ header {
     color: #fff; }
 
 @media (max-width: 600px) {
+  header nav {
+    margin-top: 20px !important; }
   header .nav-logo.scrolled-header nav {
-    display: none; }
+    display: none;
+    margin-top: 0px !important; }
     header .nav-logo.scrolled-header nav.show-nav {
       display: block; }
   header .nav-logo.scrolled-header .toggle-button {
@@ -584,7 +593,7 @@ footer {
 h3 {
   text-align: center;
   color: rgba(230, 126, 34, 0.7);
-  padding-top: 100px; }
+  padding: 100px 0 50px; }
 
 .face-lockup {
   max-width: 780px;
@@ -736,8 +745,6 @@ h3 {
   background: rgba(189, 195, 199, 0.3);
   padding-bottom: 100px;
   overflow-x: hidden; }
-  .alt-section h3 {
-    padding-bottom: 40px; }
   .alt-section .work-belt {
     width: 200%;
     position: relative;
@@ -855,8 +862,7 @@ h3 {
 
 .clients-belt {
   width: 100%;
-  position: relative;
-  margin-top: 60px; }
+  position: relative; }
   .clients-belt .client-unit {
     padding: 0 0;
     max-width: 750px;
@@ -1003,7 +1009,7 @@ h3 {
     display: none; }
 
   .client-mobile-wrap {
-    margin-top: 40px;
+    margin-top: 0px;
     text-align: center; }
     .client-mobile-wrap .client-mobile-nav {
       cursor: pointer;
@@ -1021,7 +1027,7 @@ h3 {
   padding-bottom: 100px; }
   .contact-section .social-links {
     max-width: 700px;
-    margin: 100px auto 50px auto;
+    margin: 0px auto 50px auto;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -1086,7 +1092,7 @@ h3 {
 
 .form-section form {
   max-width: 700px;
-  margin: 50px auto 100px auto;
+  margin: 0px auto 100px auto;
   padding: 0 15px; }
   .form-section form:after {
     content: "";
