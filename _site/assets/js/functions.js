@@ -58,7 +58,7 @@ function workLoad(){
 
 		var spinner = '<div class="loader">Loading...</div>',
 				// newHTML = 'work/' + newFolder + '/index.html';
-				newHTML = 'work/'+ newFolder ;
+				newHTML = 'work/'+ newFolder + ".html";
 		$('.project-title').text(newThis);
 		$('.project-load').html(spinner).load(newHTML);
 
@@ -71,9 +71,6 @@ function clientStuff(){
 	$('.client-unit').first().addClass('active-client');
 	$('.client-logo').first().addClass('active-logo')
 	$('.client-mobile-nav').first().addClass('active-logo')
-
-
-
 
 	$('.client-logo, .client-mobile-nav').on('click', function(){
 

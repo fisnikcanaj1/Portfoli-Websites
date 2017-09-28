@@ -20,8 +20,9 @@ personal-description: <p><strong>Lorem ipsum dolor sit amet, consectetur adipisi
 #Menu Item List
 
 menu:
+- {name: Home, url: '#header'}
 - {name: About Me, url: '#about'}
-- {name: Work, url: '#work'}
+- {name: Works, url: '#work'}
 - {name: Testimonial, url: '#clients'}
 - {name: Contact, url: '#contact'}
 
@@ -43,14 +44,14 @@ skills:
 
 # Project
 projects:
-- {name: Project 1, folder: proj-1, delay: '2000'}
-- {name: Project 2, folder: proj-2, delay: '2400'}
-- {name: Project 3, folder: proj-3, delay: '2800'}
-- {name: Project 4, folder: proj-4, delay: '3000'}
-- {name: Project 5, folder: proj-5, delay: '2000'}
-- {name: Project 6, folder: proj-6, delay: '2400'}
-- {name: Project 7, folder: proj-7, delay: '2800'}
-- {name: Project 8, folder: proj-8, delay: '3000'}
+- {name: Occurrence Report, folder: proj-1, delay: '2000'}
+- {name: ATS Occurrence Report, folder: proj-2, delay: '2400'}
+- {name: ATS Engineering Occurrence Report, folder: proj-3, delay: '2800'}
+- {name: Dangerous Goods Occurrence Report, folder: proj-4, delay: '3000'}
+- {name: Birdstrike Occurrence Report, folder: proj-5, delay: '2000'}
+- {name: Responsive template 1, folder: proj-6, delay: '2400'}
+- {name: Responsive template 2, folder: proj-7, delay: '2800'}
+- {name: Quote machine, folder: proj-8, delay: '3000'}
 
 
 # Client section -----------
@@ -79,6 +80,7 @@ logos:
 
 social-links:
 - {name: 'github', link: 'https://github.com/fisnikcanaj1' }
-- {name: 'facebook', link: 'https://www.facebook.com/fcanaj2' }
 - {name: 'linkedin', link: 'https://www.linkedin.com/in/fisnik-canaj-687699b8' }
+- {name: 'brand', link: 'https://www.freecodecamp.org/fisnikcanaj1' }
+- {name: 'facebook', link: 'https://www.facebook.com/fcanaj2' }
 - {name: 'instagram', link: 'https://www.instagram.com/fisnikcanaj' }
