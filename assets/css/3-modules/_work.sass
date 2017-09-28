@@ -67,7 +67,7 @@
           opacity: 1
 
 .work-container
-  max-width: 600px
+  max-width: 800px
   margin: 0 auto
   position: relative
 
@@ -94,6 +94,11 @@
     cursor: pointer
     path
       fill: $accent-color
+
+    &.return-bottom
+      top: 100%
+      left: 50%
+      +transform(translateX(-50%))
 
     &:hover
       opacity: 1

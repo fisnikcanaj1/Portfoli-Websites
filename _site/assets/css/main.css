@@ -833,7 +833,7 @@ h3 {
           opacity: 1; }
 
 .work-container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative; }
   .work-container h4 {
@@ -857,6 +857,14 @@ h3 {
     cursor: pointer; }
     .work-container .work-return path {
       fill: rgba(230, 126, 34, 0.7); }
+    .work-container .work-return.return-bottom {
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
     .work-container .work-return:hover {
       opacity: 1; }
     @media (max-width: 750px) {
