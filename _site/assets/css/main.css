@@ -567,7 +567,7 @@ header {
   header h1 {
     padding-top: 0px; }
   header .kicker {
-    font-size: 12px; } }
+    font-size: 13px; } }
 footer {
   background: url(../img/bg-image.jpg);
     background-size: cover;
@@ -729,7 +729,7 @@ section {
   color: rgba(0, 0, 0, 0.5); }
   @media (max-width: 600px) {
     .blurb {
-      font-size: 18px; } }
+      font-size: 20px !important; } }
 
 .skill-lockup {
   max-width: 600px;
