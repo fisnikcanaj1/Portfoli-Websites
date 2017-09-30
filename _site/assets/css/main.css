@@ -950,10 +950,6 @@ section {
       font-size: 18px;
       line-height: 36px;
       position: relative; }
-      @media (max-widht: 600px) {
-        .clients-belt .client-unit .client-contetnt {
-          line-height: 30px;
-          font-size: 16px; } }
       .clients-belt .client-unit .client-contetnt .icone-quotes-mark {
         position: absolute;
         top: -16px;
@@ -1039,16 +1035,20 @@ section {
 
   .clients-belt {
     overflow: hidden;
-    margin-top: 20px; }
+    margin: 20px 0 -22px; }
     .clients-belt .client-unit.active-client {
       display: block;
       position: relative;
       margin-left: 0px;
       left: auto; }
     .clients-belt .client-contetnt {
-      padding: 0 15px;
+      padding: 15px 15px 0 15px;
       margin: 0 auto;
       max-width: 600px; }
+      .clients-belt .client-contetnt p {
+        margin: 0;
+        line-height: 30px;
+        font-size: 16px; }
 
   .clients-logos {
     display: none; }
