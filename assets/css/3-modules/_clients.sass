@@ -42,11 +42,14 @@
 
     .client-contetnt
       font-weight: 400
-      font-size: 24px
       color: rgba(0, 0, 0, 0.5)
       font-size: 18px
       line-height: 36px
       position: relative
+
+      @media (max-widht: 600px)
+        line-height: 30px
+        font-size: 16px
 
       .icone-quotes-mark
         +position(absolute, -16px null null -4px)
@@ -63,7 +66,7 @@
 .clients-logos
   width: 750px
   position: relative
-  margin: 0px auto 100px
+  margin: 0px auto
   +display(flex)
   +align-items(flex-end)
   +justify-content(space-around)

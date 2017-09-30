@@ -6,14 +6,14 @@ header
   padding-bottom: 70px
 
   &.header-top
-    padding-top: 39px
+    padding-top: 23px
 
   @media (max-width: 600px)
     &.header-top
-      padding-top: 112px
-  @media (max-width: 385px)
+      padding-top: 96px
+  @media (max-width: 460px)
     &.header-top
-      padding-top: 134px
+      padding-top: 119px
 
 
   .nav-logo
@@ -48,7 +48,7 @@ header
       a
         font-size: 14px
         display: inline-block
-        margin-left: 20px
+        margin: 0 10px
         color: $bg-color
         @extend %small-bold
 
@@ -86,7 +86,13 @@ header
 
     .nav-logo
 
+      .logo
+        padding-top: 5px
+
       &.scrolled-header
+
+        .logo
+          padding-top: 0px
 
         nav
           display: none
@@ -94,11 +100,10 @@ header
           &.show-nav
             display: block
 
-
         .toggle-button
           cursor: pointer
           position: absolute
-          top: 14px
+          top: 10px
           right: 30px
           +size(38px)
 
@@ -129,20 +134,21 @@ header
             width: 100%
 
         a
+          margin: 0px
           color: white
           display: block
 
       .logo, nav
         float: none
-        padding: 5px 0
         margin: 0px auto
         text-align: center
 
         &.scrolled
-
-
-        a
-          text-align: center
+          a
+            text-align: center
 
     h1
       padding-top: 0px
+
+    .kicker
+      font-size: 12px

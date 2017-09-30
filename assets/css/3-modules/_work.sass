@@ -1,13 +1,12 @@
 .alt-section
   background: $grey-color
-  padding-bottom: 100px
   overflow-x: hidden
 
 
   .work-belt
     width: 200%
     position: relative
-    left: 0%
+    +transform(translateX(0))
     +transition(all 0.8s ease-in-out)
 
     .thumb-wrap, .work-wrap

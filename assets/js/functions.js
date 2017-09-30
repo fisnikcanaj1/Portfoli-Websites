@@ -20,7 +20,7 @@ function smoothScroll(duration) {
 		e.preventDefault();
 		console.log(target);
 		$('html, body').animate({
-			'scrollTop': target.offset().top
+			'scrollTop': target.offset().top - 66
 		}, duration, 'swing');
 	});
 
@@ -33,13 +33,17 @@ function workBelt(){
 	$('.work-container').hide();
 
 	$('.thumb-unit').on('click', function(e){
-		$('.work-belt').css('left', '-100%');
+		$('.work-belt').css('transform', 'translateX(-50%)');
+		$('.work-belt').css('-webkit-transform', 'translateX(-50%)');
+		$('.work-belt').css('-moz-transform', 'translateX(-50%)');
 		$('.work-container').show(500);
 
 	});
 
 	$('.work-return').on('click', function(e){
-		$('.work-belt').css('left', '0%');
+		$('.work-belt').css('transform', 'translateX(0%)');
+		$('.work-belt').css('-webkit-transform', 'translateX(0%)');
+		$('.work-belt').css('-mox-transform', 'translateX(0%)');
 		$('.work-container').hide(500);
 	});
 
