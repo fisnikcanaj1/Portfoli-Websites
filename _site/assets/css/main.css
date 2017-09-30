@@ -449,7 +449,7 @@ header {
   background: url(../img/bg-image.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
-  padding-bottom: 70px; }
+  padding-bottom: 100px; }
   header.header-top {
     padding-top: 23px; }
   @media (max-width: 600px) {
@@ -498,7 +498,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 20px;
-    padding-top: 105px;
+    padding-top: 100px;
     clear: both;
     text-align: center; }
     header h1 span {
@@ -507,67 +507,72 @@ header {
       border: 10px solid white; }
   header .kicker {
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    line-height: 15px;
+    margin-bottom: 0; }
 
 @media (max-width: 600px) {
-  header nav {
-    margin-top: 20px !important; }
-  header .nav-logo .logo {
-    padding-top: 5px; }
-  header .nav-logo.scrolled-header .logo {
-    padding-top: 0px; }
-  header .nav-logo.scrolled-header nav {
-    display: none;
-    margin-top: 0px !important; }
-    header .nav-logo.scrolled-header nav.show-nav {
+  header {
+    padding-bottom: 70px; }
+    header nav {
+      margin-top: 20px !important; }
+    header .nav-logo .logo {
+      padding-top: 5px; }
+    header .nav-logo.scrolled-header .logo {
+      padding-top: 0px; }
+    header .nav-logo.scrolled-header nav {
+      display: none;
+      margin-top: 0px !important; }
+      header .nav-logo.scrolled-header nav.show-nav {
+        display: block; }
+    header .nav-logo.scrolled-header .toggle-button {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      height: 38px;
+      width: 38px; }
+      header .nav-logo.scrolled-header .toggle-button.clicked {
+        padding-top: 20px; }
+        header .nav-logo.scrolled-header .toggle-button.clicked span {
+          margin: 0; }
+        header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(1) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(2) {
+          display: none; }
+        header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(3) {
+          -webkit-transform: rotate(-135deg);
+          -moz-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+          -o-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+          margin-top: -3px !important; }
+      header .nav-logo.scrolled-header .toggle-button span {
+        z-index: 999;
+        display: block;
+        margin: 9px 0;
+        height: 3px;
+        background-color: #fff;
+        width: 100%; }
+    header .nav-logo.scrolled-header a {
+      margin: 0px;
+      color: white;
       display: block; }
-  header .nav-logo.scrolled-header .toggle-button {
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    height: 38px;
-    width: 38px; }
-    header .nav-logo.scrolled-header .toggle-button.clicked {
-      padding-top: 20px; }
-      header .nav-logo.scrolled-header .toggle-button.clicked span {
-        margin: 0; }
-      header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(1) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(2) {
-        display: none; }
-      header .nav-logo.scrolled-header .toggle-button.clicked span:nth-child(3) {
-        -webkit-transform: rotate(-135deg);
-        -moz-transform: rotate(-135deg);
-        -ms-transform: rotate(-135deg);
-        -o-transform: rotate(-135deg);
-        transform: rotate(-135deg);
-        margin-top: -3px !important; }
-    header .nav-logo.scrolled-header .toggle-button span {
-      z-index: 999;
-      display: block;
-      margin: 9px 0;
-      height: 3px;
-      background-color: #fff;
-      width: 100%; }
-  header .nav-logo.scrolled-header a {
-    margin: 0px;
-    color: white;
-    display: block; }
-  header .nav-logo .logo, header .nav-logo nav {
-    float: none;
-    margin: 0px auto;
-    text-align: center; }
-    header .nav-logo .logo.scrolled a, header .nav-logo nav.scrolled a {
+    header .nav-logo .logo, header .nav-logo nav {
+      float: none;
+      margin: 0px auto;
       text-align: center; }
-  header h1 {
-    padding-top: 0px; }
-  header .kicker {
-    font-size: 13px; } }
+      header .nav-logo .logo.scrolled a, header .nav-logo nav.scrolled a {
+        text-align: center; }
+    header h1 {
+      padding-top: 15px; }
+    header .kicker {
+      font-size: 13px;
+      margin: 0; } }
 footer {
   background: url(../img/bg-image.jpg);
     background-size: cover;
@@ -605,7 +610,7 @@ h3 {
   color: rgba(230, 126, 34, 0.7);
   padding: 100px 0 70px;
   margin: 0 !important;
-  line-height: 1px !important; }
+  line-height: 18px !important; }
   @media (max-width: 600px) {
     h3 {
       padding: 70px 0 50px; } }
@@ -733,7 +738,7 @@ section {
 
 .skill-lockup {
   max-width: 600px;
-  margin: 100px auto 0;
+  margin: 50px auto -27px;
   color: #999; }
   .skill-lockup:after {
     content: "";
@@ -749,6 +754,8 @@ section {
       font-size: 18px; }
   .skill-lockup .skill-icons {
     margin-bottom: 20px; }
+    .skill-lockup .skill-icons.ux-design, .skill-lockup .skill-icons .visual-design {
+      margin-bottom: 0px; }
     .skill-lockup .skill-icons span {
       display: inline-block;
       height: 8px;
@@ -761,8 +768,7 @@ section {
 
 @media (max-width: 717px) {
   .skill-lockup {
-    width: 270px;
-    margin: 70px auto 0; } }
+    width: 270px; } }
 .skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   border-color: rgba(189, 195, 199, 0.3); }
 
@@ -1182,8 +1188,10 @@ section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .form-section form textarea:focus, .form-section form input:focus, .form-section form button:focus {
-      border-color: #FFF498; }
+  .form-section form:focus {
+    border-color: #FFF498; }
+  .form-section form button {
+    margin-bottom: 0px; }
   .form-section form textarea {
     height: 200px; }
   .form-section form label {

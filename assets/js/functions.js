@@ -36,6 +36,8 @@ function workBelt(){
 		$('.work-belt').css('transform', 'translateX(-50%)');
 		$('.work-belt').css('-webkit-transform', 'translateX(-50%)');
 		$('.work-belt').css('-moz-transform', 'translateX(-50%)');
+		$('.work-belt').css('-o-transform', 'translateX(-50%)');
+		$('.work-belt').css('-ms-transform', 'translateX(-50%)');
 		$('.work-container').show(500);
 
 	});
@@ -44,6 +46,8 @@ function workBelt(){
 		$('.work-belt').css('transform', 'translateX(0%)');
 		$('.work-belt').css('-webkit-transform', 'translateX(0%)');
 		$('.work-belt').css('-mox-transform', 'translateX(0%)');
+		$('.work-belt').css('-o-transform', 'translateX(0%)');
+		$('.work-belt').css('-ms-transform', 'translateX(0%)');
 		$('.work-container').hide(500);
 	});
 

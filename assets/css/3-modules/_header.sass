@@ -3,7 +3,7 @@ header
   background: url(../img/#{$background-image}) center center
     size: cover
     attachment: fixed
-  padding-bottom: 70px
+  padding-bottom: 100px
 
   &.header-top
     padding-top: 23px
@@ -64,7 +64,7 @@ header
     text-transform: uppercase
     letter-spacing: 0.05em
     margin-bottom: 20px
-    padding-top: 105px
+    padding-top: 100px
     clear: both
     text-align: center
     span
@@ -76,10 +76,12 @@ header
     text-align: center
     @extend %small-bold
     color: $bg-color
-
+    line-height: 15px
+    margin-bottom: 0
 
 @media (max-width: 600px)
   header
+    padding-bottom: 70px
 
     nav
       margin-top: 20px!important
@@ -148,7 +150,8 @@ header
             text-align: center
 
     h1
-      padding-top: 0px
+      padding-top: 15px
 
     .kicker
       font-size: 13px
+      margin: 0
