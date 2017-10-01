@@ -55,9 +55,6 @@
         path
           fill: $accent-color
 
-        @media (max-width: 860px)
-          +position(absolute, -16px null null 15px)
-
 
 .clients-logos
   width: 750px
@@ -83,6 +80,7 @@
   width: 100%
   position: relative
   background-color: #fff
+
   .clients-controls
     cursor: pointer!important
     path
@@ -116,10 +114,15 @@
       margin-left: 0px
       left: auto
 
+      .icone-quotes-mark
+        top: -5px!important
+        left: 12px
     .client-contetnt
       padding: 15px 15px 0 15px
       margin: 0 auto
       max-width: 600px
+
+
 
       p
         margin: 0

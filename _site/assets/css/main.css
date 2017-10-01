@@ -960,11 +960,6 @@ section {
         opacity: 0.3; }
         .clients-belt .client-unit .client-contetnt .icone-quotes-mark path {
           fill: rgba(230, 126, 34, 0.7); }
-        @media (max-width: 860px) {
-          .clients-belt .client-unit .client-contetnt .icone-quotes-mark {
-            position: absolute;
-            top: -16px;
-            left: 15px; } }
 
 .clients-logos {
   width: 750px;
@@ -1041,6 +1036,9 @@ section {
       position: relative;
       margin-left: 0px;
       left: auto; }
+      .clients-belt .client-unit.active-client .icone-quotes-mark {
+        top: -5px !important;
+        left: 12px; }
     .clients-belt .client-contetnt {
       padding: 15px 15px 0 15px;
       margin: 0 auto;
