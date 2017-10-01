@@ -80,6 +80,12 @@ function clientStuff(){
 	$('.client-logo').first().addClass('active-logo')
 	$('.client-mobile-nav').first().addClass('active-logo')
 
+	$('.client-unit').on("swipeleft", function(){
+
+		console.log("Swiped");
+
+	});
+
 	$('.client-logo, .client-mobile-nav').on('click', function(){
 
 		var $this = $(this),
