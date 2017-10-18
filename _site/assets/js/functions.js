@@ -18,7 +18,6 @@ function smoothScroll(duration) {
 		var target = $($(this).attr('href'));
 
 		e.preventDefault();
-		console.log(target);
 		$('html, body').animate({
 			'scrollTop': target.offset().top - 66
 		}, duration, 'swing');
@@ -78,31 +77,29 @@ function clientStuff(){
 
 	$('.client-unit').first().addClass('active-client');
 	$('.client-logo').first().addClass('active-logo')
-	$('.client-mobile-nav').first().addClass('active-logo')
+	$('.client-mobile-nav').first().addClass('active-logo');
 
-	$('.client-unit').on("swipeleft", function(){
 
-		console.log("Swiped");
 
-	});
-
-	$('.client-logo, .client-mobile-nav').on('click', function(){
+  $('.client-logo, .client-mobile-nav').on('click', function(){
 
 		var $this = $(this),
 		$siblings = $this.parent().children(),
 		position = $siblings.index($this);
+
+
 		$('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
 		$('.client-logo').removeClass('active-logo').eq(position).addClass('active-logo');
 		$('.client-mobile-nav').removeClass('active-logo').eq(position).addClass('active-logo');
+
 	});
 
-	$('.clients-controls-next, .clients-controls-prev').on('click', function(){
+  $('.clients-controls-next, .clients-controls-prev').on('click', function(){
 
 		var $this = $(this),
 			currentActiveClient = $('.clients-belt').find('.active-client'),
 			position = $('.clients-belt').children().index(currentActiveClient);
 			clientLen = $('.client-unit').length;
-
 
 		if ($this.hasClass('clients-controls-next')) {
 
@@ -126,18 +123,32 @@ function clientStuff(){
 				$('.active-client').removeClass('active-client').prev().addClass('active-client');
 				$('.active-logo').removeClass('active-logo').prev().addClass('active-logo');
 			}
-
 		}
+
+
+
+
 	});
 
 }
 
 function fixNav(){
+	const SCROLLLIMIT = 50;
+	var scrollTop = $(window).scrollTop();
 
+	if (scrollTop > SCROLLLIMIT) {
+
+		$("nav").css("margin-top", "0px");
+		$("nav a").css("padding", "15px 0px");
+		$("header").addClass("header-top");
+		$(".logo").addClass("scrolled");
+		$(".nav-logo").addClass("scrolled-header");
+
+	}
 	$(window).scroll(function(e) {
 
-		var scrollTop = $(window).scrollTop();
-		const SCROLLLIMIT = 50;
+		scrollTop = $(this).scrollTop();
+
 
 		if (scrollTop > SCROLLLIMIT) {
 
