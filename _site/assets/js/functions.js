@@ -32,22 +32,31 @@ function workBelt(){
 	$('.work-container').hide();
 
 	$('.thumb-unit').on('click', function(e){
-		$('.work-belt').css('transform', 'translateX(-50%)');
-		$('.work-belt').css('-webkit-transform', 'translateX(-50%)');
-		$('.work-belt').css('-moz-transform', 'translateX(-50%)');
-		$('.work-belt').css('-o-transform', 'translateX(-50%)');
-		$('.work-belt').css('-ms-transform', 'translateX(-50%)');
+
+        $('.work-belt').css({
+            'transform': 'translateX(-50%)',
+            '-webkit-transform': 'translateX(-50%)',
+            '-moz-transform': 'translateX(-50%)',
+            '-o-transform': 'translateX(-50%)',
+            '-ms-transform': 'translateX(-50%)'
+        });
+        
 		$('.work-container').show(500);
 
 	});
 
 	$('.work-return').on('click', function(e){
-		$('.work-belt').css('transform', 'translateX(0%)');
-		$('.work-belt').css('-webkit-transform', 'translateX(0%)');
-		$('.work-belt').css('-mox-transform', 'translateX(0%)');
-		$('.work-belt').css('-o-transform', 'translateX(0%)');
-		$('.work-belt').css('-ms-transform', 'translateX(0%)');
-		$('.work-container').hide(500);
+        
+		$('.work-belt').css({
+            'transform': 'translateX(0%)',
+            '-webkit-transform': 'translateX(0%)',
+            '-moz-transform': 'translateX(0%)',
+            '-o-transform': 'translateX(0%)',
+            '-ms-transform': 'translateX(0%)'
+        });
+        
+        $('.work-container').hide(500);
+        
 	});
 
 }
