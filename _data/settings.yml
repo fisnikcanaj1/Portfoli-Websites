@@ -14,26 +14,16 @@ my-face-hover: face-hover.jpg
 my-face-more: my-face-more.jpg
 
 
-<<<<<<< HEAD
-personal-description: <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong>. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-=======
 personal-description: <p><strong>Hi, I’m Fisnik Canaj, a passionate guy about web development and programming.</strong> I’m mainly focused on the Front-End of the web development process. A person who eager to learn new things and who’s always in time on tailing new technologies. I have excellent communication skills including the ability to explain and present technical information. Able to plan my own work, to work effectively under stress and prioritize multiple tasks within tight deadlines. CV <a href="assets/img/Fisnik Canaj_CV.pdf">click here</a>.</p>
->>>>>>> gh-pages
 
 
 #Menu Item List
 
 menu:
-<<<<<<< HEAD
-- {name: About Me, url: '#about'}
-- {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
-=======
 - {name: Home, url: '#header'}
 - {name: About Me, url: '#about'}
 - {name: Works, url: '#work'}
 - {name: Testimonial, url: '#clients'}
->>>>>>> gh-pages
 - {name: Contact, url: '#contact'}
 
 # About section -----------
@@ -47,28 +37,13 @@ skills:
 - {name: Teaching, value: '8'}
 - {name: Planning, value: '7'}
 - {name: Programming, value: '8'}
-<<<<<<< HEAD
-- {name: Visual Design, value: '3'}
-- {name: UX-Design, value: '6'}
-=======
 - {name: UX-Design, value: '6'}
 - {name: Visual Design, value: '3'}
->>>>>>> gh-pages
 
 # Work section -----------
 
 # Project
 projects:
-<<<<<<< HEAD
-- {name: Project 1, folder: proj-1}
-- {name: Project 2, folder: proj-2}
-- {name: Project 3, folder: proj-3}
-- {name: Project 4, folder: proj-4}
-- {name: Project 5, folder: proj-5}
-- {name: Project 6, folder: proj-6}
-- {name: Project 7, folder: proj-7}
-- {name: Project 8, folder: proj-8}
-=======
 - {name: Occurrence Report, folder: proj-1, delay: '2000'}
 - {name: ATS Occurrence Report, folder: proj-2, delay: '2400'}
 - {name: ATS Engineering Occurrence Report, folder: proj-3, delay: '2800'}
@@ -77,7 +52,6 @@ projects:
 - {name: Responsive template 1, folder: proj-6, delay: '2400'}
 - {name: Responsive template 2, folder: proj-7, delay: '2800'}
 - {name: Quote machine, folder: proj-8, delay: '3000'}
->>>>>>> gh-pages
 
 
 # Client section -----------
@@ -105,15 +79,8 @@ logos:
 
 
 social-links:
-<<<<<<< HEAD
-- {name: 'github', link: 'https://github.com/fisnikcanaj1' }
-- {name: 'facebook', link: 'https://www.facebook.com/fcanaj2' }
-- {name: 'linkedin', link: 'https://www.linkedin.com/in/fisnik-canaj-687699b8' }
-- {name: 'instagram', link: 'https://www.instagram.com/fisnikcanaj' }
-=======
 - {name: 'github', title: 'github', link: 'https://github.com/fisnikcanaj1' }
 - {name: 'linkedin', title: 'linkedin', link: 'https://www.linkedin.com/in/fisnik-canaj-687699b8' }
 - {name: 'brand', title: 'freecodecamp', link: 'https://www.freecodecamp.org/fisnikcanaj1' }
 - {name: 'facebook', title: 'facebook', link: 'https://www.facebook.com/fcanaj2' }
 - {name: 'instagram', title: 'instagram', link: 'https://www.instagram.com/fisnikcanaj' }
->>>>>>> gh-pages
