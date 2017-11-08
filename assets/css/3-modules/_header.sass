@@ -6,7 +6,7 @@ header
   padding-bottom: 100px
 
   &.header-top
-    padding-top: 23px
+    padding-top: 1px
 
   @media (max-width: 600px)
     &.header-top
@@ -57,15 +57,14 @@ header
           color: rgba(0, 0, 0, 1)
 
   h1
-
     font:
       size: 72px
       weight: 700
     color: white
     text-transform: uppercase
     letter-spacing: 0.05em
-    margin-bottom: 20px
-    padding-top: 100px
+    // margin-bottom: 20px
+    // padding-top: 100px
     clear: both
     text-align: center
     span
@@ -79,6 +78,20 @@ header
     color: $bg-color
     line-height: 15px
     margin-bottom: 0
+
+@media (min-width: 601px)
+  header
+    height: 100vh!important
+    padding: 0
+    position: relative
+
+    #header
+      // padding-top: 30vh
+      position: absolute
+      width: 100%
+      bottom: 50%
+      right: 50%
+      transform: translate(50%, 50%)
 
 @media (max-width: 600px)
   header

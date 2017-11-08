@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
 	smoothScroll(300);
+	paralexEff();
 	workBelt();
 	workLoad();
 	clientStuff();
 	fixNav();
 	$("header h1").fitText(1.0, { minFontSize: '30px', maxFontSize: '72px' });
 	navToggle();
-
 });
 	// Smooth scroll function
 
@@ -25,6 +25,25 @@ function smoothScroll(duration) {
 
 }
 
+function paralexEff() {
+
+	var $window = $(window);
+	
+	$('header[data-type="background"], footer[data-type="background"]').each(function () {
+
+		var $bgobj = $(this);
+
+		$(window).scroll(function () {
+
+			var yPos = -( 120 + $window.scrollTop() / $bgobj.data('speed'));
+
+			var cords = '50%' + yPos + 'px';
+
+			$bgobj.css({ backgroundPosition: cords });
+		});
+
+	});
+}
 
 
 function workBelt(){
@@ -234,3 +253,4 @@ function navToggle (){
   };
 
 })( jQuery );
+
