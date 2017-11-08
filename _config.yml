@@ -3,6 +3,11 @@ markdown: kramdown
 permalink: pretty
 
 port: 4000
+<<<<<<< HEAD
+=======
+
+include: ['_includes/work']
+>>>>>>> gh-pages
 
 sass:
   sass_dir: assets/css

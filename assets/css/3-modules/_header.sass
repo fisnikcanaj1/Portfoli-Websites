@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')
 body
   font-family: 'Open Sans', sans-serif
@@ -12,14 +13,41 @@ header
     background: url(../img/#{$background-image}) center bottom
       size: cover
       attachment: fixed
+=======
 
-  .logo
-    +size(50px)
-    float: left
-    margin: 20px 0 0 30px
-    path
-      fill: rgba(0,0,0, 0.2)
+header
+  background: url(../img/#{$background-image})
+    size: cover
+    attachment: fixed
+  padding-bottom: 100px
 
+  &.header-top
+    padding-top: 1px
+>>>>>>> gh-pages
+
+  @media (max-width: 600px)
+    &.header-top
+      padding-top: 96px
+  @media (max-width: 460px)
+    &.header-top
+      padding-top: 119px
+
+
+  .nav-logo
+    +transition(all 0.5s ease-in-out)
+
+    &.scrolled-header
+      position: fixed!important
+      top: 0
+      width: 100%
+      padding: 7px 0px
+      z-index: 9999
+      background-color: rgba(0,0,0, 0.6)
+      box-shadow: 0 1px 4px black
+      -moz-box-shadow: 0 1px 4px black
+      -webkit-box-shadow: 0 1px 4px black
+
+<<<<<<< HEAD
   nav
     float: right
     margin: 30px 30px 0 0
@@ -28,22 +56,47 @@ header
       display: inline-block
       margin-left: 20px
       color: rgba(0, 0, 0, 0.7)
+=======
+>>>>>>> gh-pages
 
-      @extend %small-bold
+    .logo
+      +size(50px)
+      float: left
+      margin: 20px 0 0 30px
+      opacity: 0.6
+      path
+        fill: rgba(0,0,0, 0.7)
 
-      &:hover
-        color: rgba(0, 0, 0, 1)
+      &.scrolled
+        margin: 0px 30px
+
+
+    nav
+      float: right
+      margin: 30px 30px 0 0
+      a
+        font-size: 14px
+        display: inline-block
+        margin: 0 10px
+        color: $bg-color
+        @extend %small-bold
+
+        &:hover
+          color: rgba(0, 0, 0, 1)
 
   h1
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
     font:
       size: 72px
       weight: 700
     color: white
     text-transform: uppercase
     letter-spacing: 0.05em
-    margin-bottom: 20px
-    padding-top: 105px
+    // margin-bottom: 20px
+    // padding-top: 100px
     clear: both
     text-align: center
     span
@@ -54,8 +107,11 @@ header
   .kicker
     text-align: center
     @extend %small-bold
-    color: white
+    color: $bg-color
+    line-height: 15px
+    margin-bottom: 0
 
+<<<<<<< HEAD
 
 @media (max-width: 600px)
   header
@@ -68,3 +124,95 @@ header
 
     h1
       padding-top: 0px
+=======
+@media (min-width: 601px)
+  header
+    height: 100vh!important
+    padding: 0
+    position: relative
+
+    #header
+      // padding-top: 30vh
+      position: absolute
+      width: 100%
+      bottom: 50%
+      right: 50%
+      transform: translate(50%, 41%)
+
+@media (max-width: 600px)
+  header
+    padding-bottom: 70px
+
+    nav
+      margin-top: 20px!important
+
+    .nav-logo
+
+      .logo
+        padding-top: 5px
+
+      &.scrolled-header
+
+        .logo
+          padding-top: 0px
+
+        nav
+          display: none
+          margin-top: 0px!important
+          &.show-nav
+            display: block
+
+        .toggle-button
+          cursor: pointer
+          position: absolute
+          top: 10px
+          right: 30px
+          +size(38px)
+
+          &.clicked
+            padding-top: 20px
+
+            span
+              margin: 0
+
+            span:nth-child(1)
+              // +transform(translateY(12px))
+              +transform(rotate(-45deg))
+
+            span:nth-child(2)
+              display: none
+
+            span:nth-child(3)
+              // +transform(translateY(-12px))
+              +transform(rotate(-135deg))
+              margin-top: -3px!important
+
+          span
+            z-index: 999
+            display: block
+            margin: 9px 0
+            height: 3px
+            background-color: $bg-color
+            width: 100%
+
+        a
+          margin: 0px
+          color: white
+          display: block
+
+      .logo, nav
+        float: none
+        margin: 0px auto
+        text-align: center
+
+        &.scrolled
+          a
+            text-align: center
+
+    h1
+      padding-top: 15px
+
+    .kicker
+      font-size: 13px
+      margin: 0
+>>>>>>> gh-pages

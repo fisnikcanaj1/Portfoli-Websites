@@ -2,7 +2,12 @@
 
   form
     max-width: 700px
+<<<<<<< HEAD
     margin: 50px auto 100px auto
+=======
+    margin: 0px auto
+    padding: 0 15px
+>>>>>>> gh-pages
     +clearfix
 
     .name-input, .email-input
@@ -22,6 +27,13 @@
         .email-item
           margin-left: 0%
 
+<<<<<<< HEAD
+=======
+
+    .message-input
+      clear: both
+
+>>>>>>> gh-pages
       label
         font-weight: 800
 
@@ -33,13 +45,28 @@
 
     .submit-wrap
       text-align: right
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> gh-pages
       [type='submit']
         background-color: $accent-color
         color: white
         font-size: 18px
         text-transform: uppercase
+<<<<<<< HEAD
         width: 33%
+=======
+        max-width: 33%
+
+        &:hover
+          background-color: $selection-color
+          color: $accent-color
+
+        @media (max-width: 600px)
+          max-width: 100%
+>>>>>>> gh-pages
 
     textarea, input, button
       display: inline-block
@@ -50,8 +77,18 @@
       border: 2px solid $accent-color
       +box-sizing(border-box)
 
+<<<<<<< HEAD
       &:focus
         border-color: $selection-color
+=======
+    &:focus
+      border-color: $selection-color
+
+    button
+      margin-bottom: 0px
+
+
+>>>>>>> gh-pages
 
     textarea
       height: 200px

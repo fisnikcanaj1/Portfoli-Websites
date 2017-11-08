@@ -1,6 +1,7 @@
 
-<section>
+<section id="about">
 
+<<<<<<< HEAD
   <h3 id="about">About Myself</h3>
 
   <div class="face-lockup">
@@ -14,6 +15,21 @@
 
   </div>
   <div class="blurb">
+=======
+  <h3  data-aos="fade-up" data-aos-duration="1000">About Myself</h3>
+
+  <div class="face-lockup">
+
+    <div class="face-img" data-aos="fade-up" data-aos-duration="1000" ><img src="assets/img/{{site.data.settings.my-face-more}}" alt="Fisnik profile picture" class="face-img my-face" /></div>
+
+    <div class="icon-code" data-aos="fade-up" data-aos-duration="3000">{% include icones/icon-code.html %}</div>
+    <div class="icon-mouse" data-aos="fade-up" data-aos-duration="3000">{% include icones/icon-mouse.html %}</div>
+    <div class="icon-browser" data-aos="fade-up" data-aos-duration="3000">{% include icones/icon-browser.html %}</div>
+    <div  class="icon-pencil" data-aos="fade-up" data-aos-duration="3000">{% include icones/icon-pencil.html %}</div>
+
+  </div>
+  <div class="blurb" data-aos="fade-up" data-aos-duration="3000" >
+>>>>>>> gh-pages
     {{site.data.settings.personal-description}}
   </div>
   <div class="skill-lockup">
@@ -21,8 +37,13 @@
     {% for skill in site.data.settings.skills %}
 
       <div class="skill-unit">
+<<<<<<< HEAD
         <div class="skill-label">{{skill.name}}</div>
         <div class="skill-icons skill-{{skill.value}}">
+=======
+        <div class="skill-label" data-aos="fade-up" data-aos-duration="3000">{{skill.name}}</div>
+        <div class="skill-icons skill-{{skill.value}}" data-aos="fade-up" data-aos-duration="3000">
+>>>>>>> gh-pages
           <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
