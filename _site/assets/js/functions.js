@@ -35,7 +35,7 @@ function paralexEff() {
 
 		$(window).scroll(function () {
 
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+			var yPos = ($window.scrollTop() / $bgobj.data('speed'));
 
 			var cords = '50%' + yPos + 'px';
 
