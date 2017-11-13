@@ -109,14 +109,11 @@ function clientStuff(){
 	$('.client-logo').first().addClass('active-logo')
 	$('.client-mobile-nav').first().addClass('active-logo');
 
-
-
-  $('.client-logo, .client-mobile-nav').on('click', function(){
+  	$('.client-logo, .client-mobile-nav').on('click', function(){
 
 		var $this = $(this),
-		$siblings = $this.parent().children(),
-		position = $siblings.index($this);
-
+			$siblings = $this.parent().children(),
+			position = $siblings.index($this);
 
 		$('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
 		$('.client-logo').removeClass('active-logo').eq(position).addClass('active-logo');
@@ -124,7 +121,7 @@ function clientStuff(){
 
 	});
 
-  $('.clients-controls-next, .clients-controls-prev').on('click', function(){
+  	$('.clients-controls-next, .clients-controls-prev').on('click', function(){
 
 		var $this = $(this),
 			currentActiveClient = $('.clients-belt').find('.active-client'),
@@ -154,9 +151,6 @@ function clientStuff(){
 				$('.active-logo').removeClass('active-logo').prev().addClass('active-logo');
 			}
 		}
-
-
-
 
 	});
 
@@ -211,6 +205,7 @@ function navToggle (){
 	});
 
 }
+
 
 /*global jQuery */
 /*!

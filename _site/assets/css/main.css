@@ -449,10 +449,6 @@ header {
   background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
   padding-bottom: 100px; }
-@madia screen and (max-widht: 768px) {
-  header {
-    background: url(../img/bg-image.jpg) no-repeat !important;
-      background-size: cover !important; } }
   header.header-top {
     padding-top: 1px; }
   @media (max-width: 600px) {
