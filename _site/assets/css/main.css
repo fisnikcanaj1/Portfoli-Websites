@@ -446,9 +446,8 @@ header .nav-logo nav a, header .kicker, footer .lockup .content-wrap a, h3 {
   text-transform: uppercase; }
 
 header {
-  background: url(../img/bg-image.jpg);
+  background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   padding-bottom: 100px; }
   header.header-top {
     padding-top: 1px; }
