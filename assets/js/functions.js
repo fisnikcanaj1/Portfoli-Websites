@@ -34,14 +34,16 @@ function paralexEff() {
 		var $bgobj = $(this);
 
 		$(window).scroll(function () {
+			if ($window.width() < 768) {	
+				
+				var yPos = ($window.scrollTop() / $bgobj.data('speed'));
+	
+				var cords = '50%' + yPos + 'px';
+	
+				$bgobj.css({ backgroundPosition: cords });
 
-			var yPos = ($window.scrollTop() / $bgobj.data('speed'));
-
-			var cords = '50%' + yPos + 'px';
-
-			$bgobj.css({ backgroundPosition: cords });
+			}
 		});
-
 	});
 }
 
