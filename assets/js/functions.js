@@ -173,7 +173,6 @@ function fixNav(){
 
 		scrollTop = $(this).scrollTop();
 
-
 		if (scrollTop > SCROLLLIMIT) {
 
 			$("nav").css("margin-top", "0px");
