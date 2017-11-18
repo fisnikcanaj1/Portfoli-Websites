@@ -53,7 +53,7 @@ header
         @extend %small-bold
 
         &:hover
-          color: rgba(0, 0, 0, 1)
+          color: rgba(255, 255, 255, 0.95)
 
   h1
     font:
@@ -91,6 +91,7 @@ header
       bottom: 50%
       right: 50%
       transform: translate(50%, 41%)
+      
 
 @media (max-width: 600px)
   header
@@ -99,6 +100,8 @@ header
     nav
       margin-top: 20px!important
 
+    .header-wrapper .particles-js-canvas-el
+      display: none
     .nav-logo
 
       .logo

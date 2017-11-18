@@ -8,6 +8,11 @@ $(document).ready(function(){
 	fixNav();
 	$("header h1").fitText(1.0, { minFontSize: '30px', maxFontSize: '72px' });
 	navToggle();
+	AOS.init();
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particles-js', 'assets/js/package.json', function () {
+		console.log('callback - particles.js config loaded');
+	});
 });
 	// Smooth scroll function
 
