@@ -458,14 +458,12 @@ header {
     padding-top: 1px; }
   @media (max-width: 600px) {
     header.header-top {
-      padding-top: 96px;
-      top: 96px; }
+      padding-top: 96px; }
     header #particles-js {
       top: 96px; } }
   @media (max-width: 460px) {
     header.header-top {
-      padding-top: 119px;
-      top: 119px; }
+      padding-top: 119px; }
     header #particles-js {
       top: 119px; } }
   header .nav-logo {
