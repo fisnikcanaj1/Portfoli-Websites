@@ -170,6 +170,11 @@ function clientStuff(){
 	fixNav();
 	$("header h1").fitText(1.0, { minFontSize: '30px', maxFontSize: '72px' });
 	navToggle();
+	AOS.init();
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particles-js', 'assets/js/package.json', function () {
+		console.log('callback - particles.js config loaded');
+	});
 });
 	// Smooth scroll function
 
@@ -196,14 +201,16 @@ function paralexEff() {
 		var $bgobj = $(this);
 
 		$(window).scroll(function () {
+			if ($window.width() > 768) {	
 
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+				var yPos = ($window.scrollTop() / $bgobj.data('speed'));
+	
+				var cords = '50%' + yPos + 'px';
+	
+				$bgobj.css({ backgroundPosition: cords });
 
-			var cords = '50%' + yPos + 'px';
-
-			$bgobj.css({ backgroundPosition: cords });
+			}
 		});
-
 	});
 }
 
@@ -269,14 +276,11 @@ function clientStuff(){
 	$('.client-logo').first().addClass('active-logo')
 	$('.client-mobile-nav').first().addClass('active-logo');
 
-
-
-  $('.client-logo, .client-mobile-nav').on('click', function(){
+  	$('.client-logo, .client-mobile-nav').on('click', function(){
 
 		var $this = $(this),
-		$siblings = $this.parent().children(),
-		position = $siblings.index($this);
-
+			$siblings = $this.parent().children(),
+			position = $siblings.index($this);
 
 		$('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
 		$('.client-logo').removeClass('active-logo').eq(position).addClass('active-logo');
@@ -284,7 +288,7 @@ function clientStuff(){
 
 	});
 
-  $('.clients-controls-next, .clients-controls-prev').on('click', function(){
+  	$('.clients-controls-next, .clients-controls-prev').on('click', function(){
 
 		var $this = $(this),
 			currentActiveClient = $('.clients-belt').find('.active-client'),
@@ -315,9 +319,6 @@ function clientStuff(){
 			}
 		}
 
-
-
-
 	});
 
 }
@@ -338,7 +339,6 @@ function fixNav(){
 	$(window).scroll(function(e) {
 
 		scrollTop = $(this).scrollTop();
-
 
 		if (scrollTop > SCROLLLIMIT) {
 
@@ -371,6 +371,7 @@ function navToggle (){
 	});
 
 }
+
 
 /*global jQuery */
 /*!

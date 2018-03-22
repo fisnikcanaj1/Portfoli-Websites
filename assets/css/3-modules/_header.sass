@@ -1,9 +1,14 @@
 
 header
-  background: url(../img/#{$background-image})
+  background: url(../img/#{$background-image}) no-repeat
     size: cover
-    attachment: fixed
-  padding-bottom: 100px
+  position: relative
+
+  #particles-js
+    position: absolute
+    top: 66px
+    width: 100%
+    height: 90%
 
   &.header-top
     padding-top: 1px
@@ -11,10 +16,16 @@ header
   @media (max-width: 600px)
     &.header-top
       padding-top: 96px
+
+    #particles-js
+      top: 96px
+
   @media (max-width: 460px)
     &.header-top
       padding-top: 119px
 
+    #particles-js
+      top: 119px
 
   .nav-logo
     +transition(all 0.5s ease-in-out)
@@ -54,7 +65,7 @@ header
         @extend %small-bold
 
         &:hover
-          color: rgba(0, 0, 0, 1)
+          color: rgba(255, 255, 255, 0.95)
 
   h1
     font:
@@ -67,6 +78,8 @@ header
     // padding-top: 100px
     clear: both
     text-align: center
+    margin: 0.46em 0
+
     span
       display: inline-block
       padding: 0.2em 0.5em
@@ -85,13 +98,14 @@ header
     padding: 0
     position: relative
 
-    #header
+    #heading
       // padding-top: 30vh
       position: absolute
       width: 100%
       bottom: 50%
       right: 50%
-      transform: translate(50%, 41%)
+      transform: translate(50%, 47%)
+      
 
 @media (max-width: 600px)
   header
