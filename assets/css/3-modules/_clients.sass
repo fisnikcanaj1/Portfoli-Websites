@@ -1,0 +1,149 @@
+
+.clients-belt
+  width: 100%
+  position: relative
+
+  .client-unit
+    padding: 0 0
+    max-width: 750px
+    margin: 0 auto 20px
+    +position(relative, 0px null null 0)
+    display: none
+
+    &.active-client
+      +display(flex)
+      +transition
+      -webkit-animation: animation-bounce 1000ms linear  both
+      animation: animation-bounce 1000ms linear both
+
+    .client-face
+      min-width: 200px
+      text-align: center
+      margin: 15px 0 0 0
+
+      img
+        max-width: 100px
+        border-radius: 50%
+
+      .client-name
+        display: block
+        font-weight: 400
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-size: 14px
+
+      .client-title
+        font-style: normal
+        font-size: 12px
+
+      .client-name, .client-title
+        color: rgba(0, 0, 0, 0.5)
+
+
+    .client-contetnt
+      font-weight: 400
+      color: rgba(0, 0, 0, 0.5)
+      font-size: 18px
+      line-height: 36px
+      position: relative
+
+      .icone-quotes-mark
+        +position(absolute, -16px null null -4px)
+        +size(60px)
+        z-index: -10
+        opacity: 0.3
+        path
+          fill: $accent-color
+
+
+.clients-logos
+  width: 750px
+  position: relative
+  margin: 0px auto
+  +display(flex)
+  +align-items(flex-end)
+  +justify-content(space-around)
+
+  .client-logo
+    max-width: 100%
+    cursor: pointer
+    border-bottom: 3px solid $bg-color
+    margin: 0 20px
+    opacity: 0.5!important
+    padding-bottom: 10px
+    &.active-logo
+
+      opacity: 1!important
+      border-bottom: 3px solid $accent-color
+
+.clients-section
+  width: 100%
+  position: relative
+  background-color: #fff
+
+  .clients-controls
+    cursor: pointer!important
+    path
+      fill: $accent-color
+    .clients-controls-next
+      +size(50px)
+      position: absolute
+      top: 50%
+      right: 20px
+      z-index: 999
+
+
+    .clients-controls-prev
+      +size(50px)
+      position: absolute
+      top: 50%
+      left: 20px
+      z-index: 999
+
+@media screen and (max-width: 860px)
+  .clients-controls
+    display: none
+
+  .clients-belt
+    overflow: hidden
+    margin: 20px 0 -22px
+
+    .client-unit.active-client
+      display: block
+      position: relative
+      margin-left: 0px
+      left: auto
+
+      .icone-quotes-mark
+        top: -5px!important
+        left: 12px
+    .client-contetnt
+      padding: 15px 15px 0 15px
+      margin: 0 auto
+      max-width: 600px
+
+
+
+      p
+        margin: 0
+        line-height: 30px
+        font-size: 16px
+
+
+  .clients-logos
+    display: none
+
+  .client-mobile-wrap
+    margin-top: 0px
+    text-align: center
+
+    .client-mobile-nav
+      cursor: pointer
+      display: inline-block
+      +size(16px)
+      border: 2px solid $grey-color
+      border-radius: 50%
+      margin: 0 10px
+
+      &.active-logo
+        border-color: $accent-color

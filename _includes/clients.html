@@ -1,0 +1,47 @@
+<section class="clients-section" id="clients">
+
+    <h3 data-aos="fade-up" data-aos-duration="3000">Testimonial</h3>
+
+  <div class="clients-controls">
+    <div class="clients-controls-next" data-aos="fade-in" data-aos-duration="3000">{% include icones/icon-next.html %}</div>
+    <div class="clients-controls-prev" data-aos="fade-in" data-aos-duration="3000">{% include  icones/icon-prev.html %}</div>
+  </div>
+  <div class="client-mobile-wrap" data-aos="fade-up" data-aos-duration="3000">
+    {% for client in site.data.settings.testimonial %}
+      <span class="client-mobile-nav"></span>
+    {% endfor %}
+  </div>
+
+  <div class="clients-belt" data-aos="fade-up" data-aos-duration="3000">
+  {% for client in site.data.settings.testimonial %}
+    <div class="client-unit">
+
+      <figure class="client-face">
+        <img src="assets/img/clients/{{ client.img }}" alt="client-face" >
+
+        <figcaption>
+          <strong class="client-name">{{ client.name  }}</strong>
+          <em class="client-title">{{ client.title }}</em>
+        </figcaption>
+      </figure>
+
+      <div class="client-contetnt">
+        <div class="icone-quotes-mark">
+          {% include icones/icon-quote-mark.html %}
+        </div>
+
+        {{client.quotes}}
+
+      </div>
+
+    </div>
+  {% endfor %}
+  </div>
+
+  <div class="clients-logos" data-aos="fade-up" data-aos-duration="1000">
+  {% for logo in site.data.settings.logos %}
+    <img src="assets/img/clients/{{logo.logo}}" class="client-logo" alt="logo.logo">
+  {% endfor %}
+  </div>
+
+</section>

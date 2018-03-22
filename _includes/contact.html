@@ -1,0 +1,13 @@
+<section class="contact-section" id="contact">
+
+  <h3  data-aos="fade-up" data-aos-duration="3000">Contact</h3>
+  <div class="social-links" data-aos="fade-up" data-aos-duration="3000">
+    {% for link in site.data.settings.social-links %}
+      <a href="{{link.link}}" class="icon-{{link.name}}" title="{{link.title}}"></a>
+    {% endfor %}
+  </div>
+  <hr class="bar" data-aos="fade-up" data-aos-duration="3000">
+
+  <a href="mailto:{{site.data.settings.email}}" class="email-link" data-aos="fade-up" data-aos-duration="3000">{{site.data.settings.email}}</a>
+
+</section>

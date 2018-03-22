@@ -1,0 +1,20 @@
+<footer>
+  <div class="lockup">
+
+    <div class="logo">{% include icones/logo.html %}</div>
+
+    <div class="content-wrap">
+
+      <nav>
+        {% for link in site.data.settings.menu %}
+          <a href="{{link.url}}">{{link.name}}</a>
+        {% endfor %}
+      </nav>
+
+      <p class="copyright">All content copyright 2017</p>
+
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,30 @@
+<header id="header" data-type="background" data-speed="2">
+
+  <div class="nav-logo">
+
+    <div class="logo" data-aos="fade-in" data-aos-duration="3000"><a href="">{% include icones/logo.html %}</a></div>
+
+    <div class="toggle-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-bar">
+      {% for item in site.data.settings.menu %}
+      <a href="{{item.url}}" data-aos="fade-in" data-aos-duration="3000">{{item.name}}</a>
+      {% endfor %}
+    </nav>
+  
+  </div>
+   
+  <div id="heading">
+    <h1 data-aos="fade-up" data-aos-duration="3000"><span>{{ site.data.settings.title }}</span></h1>
+    <p class="kicker" data-aos="fade-up" data-aos-duration="2500">{{site.data.settings.description}}</p>
+  </div>
+
+  <div class="header-wrapper" id="particles-js">
+  
+  </div>
+
+</header>
