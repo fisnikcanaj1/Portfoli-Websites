@@ -363,11 +363,7 @@ td, th {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-<<<<<<< HEAD
-  color: #bd5248;
-=======
   color: rgba(134, 80, 25, 0.8);
->>>>>>> gh-pages
   font-weight: bold; }
 
 .gigantic {
@@ -413,20 +409,12 @@ hr {
   height: 0; }
 
 a {
-<<<<<<< HEAD
-  color: #bd5248;
-=======
   color: rgba(134, 80, 25, 0.8);
->>>>>>> gh-pages
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-<<<<<<< HEAD
-  color: #d89993; }
-=======
   color: rgba(216, 131, 45, 0.8); }
->>>>>>> gh-pages
 
 ::selection {
   background: #fff498; }
@@ -444,15 +432,6 @@ body {
   -webkit-tap-highlight-color: #fff498; }
 
 body {
-<<<<<<< HEAD
-  background: #f6f6f8;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: "Open Sans" sans-serif;
-  color: #2e2d33;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
-=======
   background: #fff;
   font-size: 14px;
   line-height: 1.6;
@@ -1240,4 +1219,3 @@ section {
     color: rgba(0, 0, 0, 0.5); }
 
 /* Header Path  Configurations */
->>>>>>> gh-pages
