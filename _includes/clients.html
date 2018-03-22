@@ -38,9 +38,9 @@
   {% endfor %}
   </div>
 
-  <div class="clients-logos">
+  <div class="clients-logos" data-aos="fade-up" data-aos-duration="1000">
   {% for logo in site.data.settings.logos %}
-    <img src="assets/img/clients/{{logo.logo}}" data-aos="fade-up" data-aos-duration="1000" class="client-logo" alt="logo.logo">
+    <img src="assets/img/clients/{{logo.logo}}" class="client-logo" alt="logo.logo">
   {% endfor %}
   </div>
 
