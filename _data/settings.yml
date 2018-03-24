@@ -57,7 +57,7 @@ projects:
 # Client section -----------
 
 testimonial:
-- {img: 'face-albert.jpg', name: 'Albert Lekal', title: 'Graphic Designer', quotes: "<p><strong>Working with Fisnik kind of playing the game you love and never ending sadisfation.</strong> He can make hard tasks looked very easy. I have learn a lot from him and also ispirated from his energy and ethic of work I want to say that he can kill a deadline, he's very fast. The level he head reached is product of love for programing and development world.</p>"}
+- {img: 'face-albert.jpg', name: 'Albert Lekal', title: 'Graphic Designer', quotes: "<p><strong>Working with Fisnik kind of playing the game you love and never ending sadisfation.</strong> He can make hard tasks looked very easy. I have learn a lot from him and also ispirated from his energy and ethic of work. I want to say that he can kill a deadline, he's very fast. The level he head reached is product of love for programing and development world.</p>"}
 
 - {img: 'face-ylli.jpg', name: 'Ylli Tahiraj', title: 'Graphic Designer', quotes: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore
 magna aliqua.</p>'}
