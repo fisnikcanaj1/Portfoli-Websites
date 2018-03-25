@@ -44,20 +44,28 @@ skills:
 
 # Project
 projects:
+- {name: Mark-ing.com, folder: proj-16, delay: '2000'}
+- {name: Laravel RESTful API, folder: proj-9, delay: '2000'}
+- {name: Trevel Site, folder: proj-11, delay: '2000'}
 - {name: Occurrence Report, folder: proj-1, delay: '2000'}
-- {name: ATS Occurrence Report, folder: proj-2, delay: '2400'}
-- {name: ATS Engineering Occurrence Report, folder: proj-3, delay: '2800'}
-- {name: Dangerous Goods Occurrence Report, folder: proj-4, delay: '3000'}
+- {name: ATS Occurrence Report, folder: proj-2, delay: '2000'}
+- {name: ATS Engineering Occurrence Report, folder: proj-3, delay: '2000'}
+- {name: Dangerous Goods Occurrence Report, folder: proj-4, delay: '2000'}
 - {name: Birdstrike Occurrence Report, folder: proj-5, delay: '2000'}
-- {name: Responsive template 1, folder: proj-6, delay: '2400'}
-- {name: Responsive template 2, folder: proj-7, delay: '2800'}
-- {name: Quote machine, folder: proj-8, delay: '3000'}
+- {name: Responsive template , folder: proj-6, delay: '2000'}
+- {name: Responsive template 2, folder: proj-7, delay: '2000'}
+- {name: Quote machine, folder: proj-8, delay: '2000'}
+- {name: Users Data, folder: proj-10, delay: '2000'}
+- {name: Bootstrap To Wordpress, folder: proj-12, delay: '2000'}
+- {name: Loop Lab, folder: proj-13, delay: '2000'}
+- {name: Infinit Scroll, folder: proj-14, delay: '2000'}
+- {name: Tech, folder: proj-15, delay: '2000'}
 
 
 # Client section -----------
 
 testimonial:
-- {img: 'face-albert.jpg', name: 'Albert Lekal', title: 'Graphic Designer', quotes: "<p><strong>Working with Fisnik kind of playing the game you love and never ending sadisfation.</strong> He can make hard tasks looked very easy. I have learn a lot from him and also ispirated from his energy and ethic of work. I want to say that he can kill a deadline, he's very fast. The level he head reached is product of love for programing and development world.</p>"}
+- {img: 'face-albert.jpg', name: 'Albert Lekal', title: 'Graphic Designer - UX', quotes: "<p><strong>Working with Fisnik kind of playing the game you love and never ending sadisfation.</strong> He can make hard tasks looked very easy. I have learn a lot from him and also ispirated from his energy and ethic of work. I want to say that he can kill a deadline, he's very fast. The level he head reached is product of love for programing and development world.</p>"}
 
 - {img: 'face-ylli.jpg', name: 'Ylli Tahiraj', title: 'Graphic Designer', quotes: '<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore
 magna aliqua.</p>'}
