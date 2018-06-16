@@ -449,7 +449,7 @@ header .nav-logo nav a, header .kicker, footer .lockup .content-wrap a, h3 {
 header {
   background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 0;
   position: relative; }
   header #particles-js {
     position: absolute;
