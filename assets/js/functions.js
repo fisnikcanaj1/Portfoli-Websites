@@ -30,6 +30,7 @@ function smoothScroll(duration) {
 
 }
 
+
 function paralexEff() {
 
 	var $window = $(window);
@@ -48,6 +49,17 @@ function paralexEff() {
 				$bgobj.css({ backgroundPosition: cords });
 
 			}
+
+			if ($window.scrollTop() >= 250) {
+				
+				var yPos = $window.scrollTop() / 100;
+				console.log(yPos);
+				$('#heading').css({ 'filter': 'blur(' + yPos +'px) grayscale(20%)' });
+			}
+			else if (($window.scrollTop() <= 250)) {
+				$('#heading').css({ 'filter': 'blur(0px) grayscale(0%)' });
+			}
+			
 		});
 	});
 }
